@@ -10,6 +10,7 @@ dependencies = [
     "beautifulsoup4>=4.15.0",
     "curl-cffi>=0.16.2",
     "fastapi[standard]>=0.141.1",
+    "git-filter-repo>=2.47.0",
     "markdownify>=1.2.3",
     "ollama>=0.6.2",
     "playwright>=1.62.0",

@@ -12827,3 +12827,709 @@ NotImplementedError
 2026-08-28 12:40:45,959 | INFO | [jiji.ng] 🟢 [EXTRACTED 113/1000] -> https://jiji.ng/ikeja/power-equipments/factory-made-12g-sdi-cable-10mtrs-pure-copper-quality-video-cable-ui5uAc2cc2neiSJauSXHolQh.html?page=1&pos=19&cur_pos=19&ads_per_page=24&ads_count=3948&lid=4ricOzlBBhGXehh7&indexPosition=18
 2026-08-28 12:40:46,023 | INFO | [jiji.ng] 🟢 [EXTRACTED 114/1000] -> https://jiji.ng/ikeja/power-equipments/growatt-10kva-hybrid-48v-system-2-mppt-wifi-ready-tALvTCRvXKJvU0V1YNuT7tae.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-2JAazoZsA7r6mD-_&indexPosition=8
 2026-08-28 12:40:49,584 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 114 products directly to Supabase in 430.23s.
+2026-09-02 14:12:08,291 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 14:12:08,294 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 14:12:09,732 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/
+2026-09-02 14:12:10,532 | INFO | [jiji.ng] 🟢 [EXTRACTED 1/200] -> https://jiji.ng/alimosho/cars/toyota-highlander-2010-gray-58MBy0ezKjatiYN402cFp6Wn.html?page=1&pos=7&cur_pos=7&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=6
+2026-09-02 14:12:11,464 | INFO | [jiji.ng] 🟢 [EXTRACTED 2/200] -> https://jiji.ng/alimosho/mobile-phones/samsung-galaxy-s21-5g-256-gb-silver-kLY4iX1RC7ZA8u5MWdQecUIW.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=14
+2026-09-02 14:12:12,411 | INFO | [jiji.ng] 🟢 [EXTRACTED 3/200] -> https://jiji.ng/ayobo-ipaja/mobile-phones/samsung-galaxy-s20-5g-128-gb-blue-eYVqHM4OiPXNyruRRlRHpncV.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=17
+2026-09-02 14:12:13,440 | INFO | [jiji.ng] 🟢 [EXTRACTED 4/200] -> https://jiji.ng/central-business-district/cars/toyota-venza-le-2011-white-kzKgwT8PvC3x64MmnuZbA2J7.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=4
+2026-09-02 14:12:14,373 | INFO | [jiji.ng] 🟢 [EXTRACTED 5/200] -> https://jiji.ng/dutse-jigawa/power-equipments/25kwh-lithium-ion-battery-felicity-much-available-xujmg8CIC4pkdAQQ5psIU7Lp.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=21
+2026-09-02 14:12:18,712 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:20,173 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:21,391 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:22,389 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:23,481 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:25,374 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:12:25,385 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:12:25,444 | INFO | [jiji.ng] 🟢 [EXTRACTED 6/200] -> https://jiji.ng/garki-i/power-equipments/portable-4-5kva-ipower-soundproof-inverter-generator-pUD7tvPXNsYRmXK5C8Vjvau0.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=22
+2026-09-02 14:12:25,517 | INFO | [jiji.ng] 🟢 [EXTRACTED 7/200] -> https://jiji.ng/garki-ii/cars/honda-accord-2019-black-wWswc5dgEyD4SfmwFwOSwg0v.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=2
+2026-09-02 14:12:25,584 | INFO | [jiji.ng] 🟢 [EXTRACTED 8/200] -> https://jiji.ng/gwarinpa/mobile-phones/new-samsung-galaxy-a37-128-gb-purple-BbsZnn3D1LDZ92ZKBgAp4kT1.html?page=1&pos=12&cur_pos=12&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=11
+2026-09-02 14:12:25,672 | INFO | [jiji.ng] 🟢 [EXTRACTED 9/200] -> https://jiji.ng/ikeja/cars/toyota-echo-sedan-2005-red-g9gdCmodHDjINxirjOmb0nem.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=5
+2026-09-02 14:12:25,786 | INFO | [jiji.ng] 🟢 [EXTRACTED 10/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-128-gb-pink-yxkNzGewVZr4z6r9jyDVZGjb.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=10
+2026-09-02 14:12:26,721 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:27,477 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:29,044 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:29,684 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:30,888 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:31,804 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:12:31,825 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:12:31,978 | INFO | [jiji.ng] 🟢 [EXTRACTED 11/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-12-pro-512-gb-white-69VBv3rVasqnV9wKnw1iRNvC.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=16
+2026-09-02 14:12:32,130 | INFO | [jiji.ng] 🟢 [EXTRACTED 12/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-pro-max-128-gb-graphite-Hck1f5D3ZGqfqMVXW7Wvfbp.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=9
+2026-09-02 14:12:32,244 | INFO | [jiji.ng] 🟢 [EXTRACTED 13/200] -> https://jiji.ng/ikeja/mobile-phones/infinix-note-60-pro-256-gb-fS9z2dSwQmNAgNCvWKPljTBs.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=12
+2026-09-02 14:12:32,410 | INFO | [jiji.ng] 🟢 [EXTRACTED 14/200] -> https://jiji.ng/ikorodu/mobile-phones/apple-iphone-xr-64-gb-gray-ynBR7PZjn6tpX46j1q5RJugW.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=13
+2026-09-02 14:12:32,489 | INFO | [jiji.ng] 🟢 [EXTRACTED 15/200] -> https://jiji.ng/isolo/cars/hyundai-ix35-2013-gray-k2cjlriOFgS9Rdrjmb6bKDNt.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=8
+2026-09-02 14:12:33,591 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:34,855 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:35,875 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:37,324 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:38,209 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:39,037 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:12:39,050 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:12:39,201 | INFO | [jiji.ng] 🟢 [EXTRACTED 16/200] -> https://jiji.ng/isolo/power-equipments/itel-energy-6kw-hybrid-solar-inverter-oUFrLutNjw8gyF7X9D1F5zBO.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=19
+2026-09-02 14:12:39,343 | INFO | [jiji.ng] 🟢 [EXTRACTED 17/200] -> https://jiji.ng/isolo/power-equipments/itel-energy-power-go-pro-320wh-tRnnD3zRtgRHSFW2i8DUTZw5.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=18
+2026-09-02 14:12:39,489 | INFO | [jiji.ng] 🟢 [EXTRACTED 18/200] -> https://jiji.ng/jigawa/power-equipments/1core-x-240mm-flexible-power-cable-nNQU3BD8pfrn3BwZfSNGmedu.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=23
+2026-09-02 14:12:39,653 | INFO | [jiji.ng] 🟢 [EXTRACTED 19/200] -> https://jiji.ng/jigawa/power-equipments/4core-x-35mm-multi-core-copper-armored-cable-ac1uEVBKMCmZkERviWX9LRWg.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=20
+2026-09-02 14:12:39,794 | INFO | [jiji.ng] 🟢 [EXTRACTED 20/200] -> https://jiji.ng/lekki/cars/genesis-g80-2016-blue-l1PiY6I3fWJdElLfVI3a1o5r.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=1
+2026-09-02 14:12:40,956 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:41,854 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:42,929 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:44,117 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:44,776 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:12:45,562 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:12:45,578 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:12:45,753 | INFO | [jiji.ng] 🟢 [EXTRACTED 21/200] -> https://jiji.ng/lekki/cars/hyundai-ix35-2014-gray-b3sHYBwk5EKhK0HzYCvEMwNj.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=3
+2026-09-02 14:12:45,940 | INFO | [jiji.ng] 🟢 [EXTRACTED 22/200] -> https://jiji.ng/lekki/cars/mercedes-benz-gle-class-gle-350-4matic-2019-gray-zMGPnaYunrxYSIz7beVAFWGl.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-Mr-e9A-0jbDSTbHE&indexPosition=0
+2026-09-02 14:12:46,580 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/alimosho/cars/toyota-highlander-2010-gray-58MBy0ezKjatiYN402cFp6Wn.html?page=1%26pos=7%26cur_pos=7%26ads_per_page=26%26lid=r-Mr-e9A-0jbDSTbHE%26indexPosition=6&type=report-abuse
+2026-09-02 14:12:52,136 | INFO | [jiji.ng] 🟢 [EXTRACTED 23/200] -> https://jiji.ng/abuja/cars/toyota-venza-2014-green-5vjrtrtmnfO9CcTUFShtz8zj.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-kya5hX0CTKCsk3lK&indexPosition=20
+2026-09-02 14:13:08,597 | INFO | [jiji.ng] 🟢 [EXTRACTED 24/200] -> https://jiji.ng/ajah/cars/lexus-es-350-2007-gray-jPBcOTA2TjTyQtA3PIqb6iET.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=16
+2026-09-02 14:13:26,487 | INFO | [jiji.ng] 🟢 [EXTRACTED 25/200] -> https://jiji.ng/ajah/cars/toyota-highlander-2015-beige-dDvv1fwJKWjUB7IUuxPz5V8Q.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=17
+2026-09-02 14:13:29,572 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:13:30,522 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:13:31,455 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:13:32,615 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:13:33,277 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:13:34,170 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:13:34,175 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:13:44,550 | INFO | [jiji.ng] 🟢 [EXTRACTED 26/200] -> https://jiji.ng/ajah/cars/toyota-venza-awd-2010-gold-6jzPWdHJpm6TqsylfHzE4Pxo.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=10
+2026-09-02 14:14:02,428 | INFO | [jiji.ng] 🟢 [EXTRACTED 27/200] -> https://jiji.ng/ajah/cars/toyota-venza-v6-2009-red-1wrlmyYAuE3ntNPCuSlPZssP.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=0
+2026-09-02 14:14:20,447 | INFO | [jiji.ng] 🟢 [EXTRACTED 28/200] -> https://jiji.ng/alimosho/cars/toyota-camry-le-4dr-sedan-2-4l-4cyl-4a-2004-silver-wPEMb4Ap9knXK0hUUn65bthj.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=19
+2026-09-02 14:14:38,638 | INFO | [jiji.ng] 🟢 [EXTRACTED 29/200] -> https://jiji.ng/amuwo-odofin/cars/lexus-rx-350-fwd-2013-white-ckIFUuq3wgNdrTmN11mhpZSY.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=18
+2026-09-02 14:14:56,467 | INFO | [jiji.ng] 🟢 [EXTRACTED 30/200] -> https://jiji.ng/gudu/cars/lexus-rx-2011-gray-kVJLcu7DjFT7gLOAn73S1WKm.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=12
+2026-09-02 14:14:59,353 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:15:00,507 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:15:01,673 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:15:02,752 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:15:03,617 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:15:05,069 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:15:05,086 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:15:14,579 | INFO | [jiji.ng] 🟢 [EXTRACTED 31/200] -> https://jiji.ng/gwarinpa/cars/lexus-rx-330-2006-silver-O2xJp6YK9C4LBo1xpq1kf84.html?page=1&pos=7&cur_pos=7&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=6
+2026-09-02 14:15:32,535 | INFO | [jiji.ng] 🟢 [EXTRACTED 32/200] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-c300-2009-gray-zRrlzorfD8GuQzH9xrpxgQhQ.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=13
+2026-09-02 14:15:50,594 | INFO | [jiji.ng] 🟢 [EXTRACTED 33/200] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-c300-luxury-sedan-awd-3-0l-6cyl-7a-2008-silver-bjo2vrtmULkMH9iJkJWzfR0b.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=21
+2026-09-02 14:16:08,633 | INFO | [jiji.ng] 🟢 [EXTRACTED 34/200] -> https://jiji.ng/ikeja/cars/toyota-venza-limited-4dr-wagon-3-5l-6cyl-6a-2014-black-ujLcSRzcHNSJQFm4tCoID4yr.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=23
+2026-09-02 14:16:26,549 | INFO | [jiji.ng] 🟢 [EXTRACTED 35/200] -> https://jiji.ng/isolo/cars/toyota-matrix-2009-silver-7SaCoareKxahtLQ3JFN5Jqdy.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=5
+2026-09-02 14:16:29,445 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:16:30,417 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:16:31,547 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:16:32,728 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:16:33,489 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:16:34,299 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:16:34,311 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:16:44,709 | INFO | [jiji.ng] 🟢 [EXTRACTED 36/200] -> https://jiji.ng/isolo/cars/toyota-venza-limited-awd-v6-2013-black-b6cDiZQehy78GgLseH9HFvYJ.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=14
+2026-09-02 14:17:02,703 | INFO | [jiji.ng] 🟢 [EXTRACTED 37/200] -> https://jiji.ng/katampe/cars/honda-hr-v-4dr-suv-1-5l-4cyl-cvt-2016-black-8kPJRpVcadPlfw6Q9PP14GjT.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=1
+2026-09-02 14:17:20,648 | INFO | [jiji.ng] 🟢 [EXTRACTED 38/200] -> https://jiji.ng/katampe/cars/mercedes-benz-gl-class-2015-black-1KeKaLf0mlK9VvZKrkybNdPq.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=3
+2026-09-02 14:17:38,603 | INFO | [jiji.ng] 🟢 [EXTRACTED 39/200] -> https://jiji.ng/katampe/cars/mercedes-benz-glk-class-2011-silver-ptEPzjbLroKxfqvdJ6g4MlXf.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=7
+2026-09-02 14:17:56,608 | INFO | [jiji.ng] 🟢 [EXTRACTED 40/200] -> https://jiji.ng/kubwa/cars/lexus-rx-2012-black-u8fuBPDKMp8tjpt0QppBtkgu.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-CMRfASwsKl_ofOgV&indexPosition=15
+2026-09-02 14:17:59,501 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:00,814 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:01,992 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:02,984 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:03,960 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:05,011 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:18:05,020 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:18:15,066 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/toyota-venza-2014-green-5vjrtrtmnfO9CcTUFShtz8zj.html?page=1%26pos=21%26cur_pos=21%26ads_per_page=26%26lid=r-CMRfASwsKl_ofOgV%26indexPosition=20&type=report-abuse
+2026-09-02 14:18:19,616 | INFO | [jiji.ng] 🟢 [EXTRACTED 41/200] -> https://jiji.ng/abuja/cars/lexus-rx-2010-silver-fl5Z90IZ99nCTAoEyF4TtfxO.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-ueP1ry4gbOYzF1lY&indexPosition=1
+2026-09-02 14:18:24,761 | INFO | [jiji.ng] 🟢 [EXTRACTED 42/200] -> https://jiji.ng/amuwo-odofin/cars/mercedes-benz-m-class-ml400-4matic-4dr-suv-awd-3-0l-6cyl-turbo-7a-ke29QPSZX2W5mgXIIso0DhMn.html?page=1&pos=7&cur_pos=7&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=6
+2026-09-02 14:18:29,834 | INFO | [jiji.ng] 🟢 [EXTRACTED 43/200] -> https://jiji.ng/biriniwa/power-equipments/33kv-polymer-drop-out-fuse-cutout-hgcsIHizbjJmrE3CCTCq5Bjl.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=19
+2026-09-02 14:18:34,517 | INFO | [jiji.ng] 🟢 [EXTRACTED 44/200] -> https://jiji.ng/dutse-jigawa/power-equipments/10mm2-x-1-core-flexible-insulated-copper-cable-yxiRS48OKmAO7bZu6cQRFRU7.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=17
+2026-09-02 14:18:39,565 | INFO | [jiji.ng] 🟢 [EXTRACTED 45/200] -> https://jiji.ng/epe/mobile-phones/apple-iphone-xr-64-gb-black-ynkkE53xgCAKUSPaNsWVPZFj.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=13
+2026-09-02 14:18:42,363 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:43,447 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:44,410 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:45,378 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:46,778 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:18:47,618 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:18:47,632 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:18:47,941 | INFO | [jiji.ng] 🟢 [EXTRACTED 46/200] -> https://jiji.ng/garki-i/power-equipments/maxmech-15000-12kva-petrol-generator-strong-durable-dXp0JQLPDCMXCU8hddiCio45.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=20
+2026-09-02 14:18:54,559 | INFO | [jiji.ng] 🟢 [EXTRACTED 47/200] -> https://jiji.ng/gudu/cars/lexus-rx-350-2010-black-zKIJEBnmOvP1G1q7Pp8fUIkJ.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=2
+2026-09-02 14:18:59,570 | INFO | [jiji.ng] 🟢 [EXTRACTED 48/200] -> https://jiji.ng/gwarinpa/cars/lexus-rx-350-fwd-2015-burgundy-nme17kEX8FrXrdxxEGKr9Lhg.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=7
+2026-09-02 14:19:04,609 | INFO | [jiji.ng] 🟢 [EXTRACTED 49/200] -> https://jiji.ng/ibeju/power-equipments/cummins-kta38-marine-engine-iy2g3pcQbP7frpnCv4etI8hf.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=21
+2026-09-02 14:19:09,907 | INFO | [jiji.ng] 🟢 [EXTRACTED 50/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-128-gb-pink-u9bKR942GA6Yb7n9JWWlr8Oh.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=12
+2026-09-02 14:19:12,927 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:13,804 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:15,069 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:16,481 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:17,769 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:18,674 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:19:18,696 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:19:19,468 | INFO | [jiji.ng] 🟢 [EXTRACTED 51/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-128-gb-red-wphyXLVshlgfKzSOd75oIN1M.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=8
+2026-09-02 14:19:19,900 | INFO | [jiji.ng] 🟢 [EXTRACTED 52/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-16-128-gb-pink-wC4TzZ6LGSjYnYXumTfCIsFG.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=10
+2026-09-02 14:19:24,509 | INFO | [jiji.ng] 🟢 [EXTRACTED 53/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-xr-64-gb-black-BbPcc4RUY6imc4o1tfTjFRBs.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=16
+2026-09-02 14:19:29,562 | INFO | [jiji.ng] 🟢 [EXTRACTED 54/200] -> https://jiji.ng/ikorodu/mobile-phones/apple-iphone-12-64-gb-blue-1CnpiYrZtKbbS7szYUxHWWTI.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=15
+2026-09-02 14:19:34,644 | INFO | [jiji.ng] 🟢 [EXTRACTED 55/200] -> https://jiji.ng/kado/cars/lexus-rx-2013-black-AnucnowYcoLxVD8zUz9p61Q.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=4
+2026-09-02 14:19:37,740 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:39,033 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:40,390 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:41,556 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:42,862 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:19:43,763 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:19:43,778 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:19:44,118 | INFO | [jiji.ng] 🟢 [EXTRACTED 56/200] -> https://jiji.ng/kubwa/cars/lexus-rx-2013-gray-3IDm9V2K0LJQR3xZKE3Dvq44.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=3
+2026-09-02 14:19:44,681 | INFO | [jiji.ng] 🟢 [EXTRACTED 57/200] -> https://jiji.ng/lagos/solar-energy-products/sweet-deal-solar-energy-inverter-battery-panel-s-controller-3CfrXmEDekuRv9aee3uUC66x.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=18
+2026-09-02 14:19:49,551 | INFO | [jiji.ng] 🟢 [EXTRACTED 58/200] -> https://jiji.ng/lekki/power-equipments/brand-new-maxi-15kva-petrol-s1sqH4DABcccBzHDr1NviKCI.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-31QyDW71GksvhC2O&indexPosition=23
+2026-09-02 14:19:55,234 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/lexus-rx-2010-silver-fl5Z90IZ99nCTAoEyF4TtfxO.html?page=1%26pos=2%26cur_pos=2%26ads_per_page=26%26lid=r-31QyDW71GksvhC2O%26indexPosition=1&type=report-abuse
+2026-09-02 14:19:59,796 | INFO | [jiji.ng] 🟢 [EXTRACTED 59/200] -> https://jiji.ng/akure-south/mobile-phones/apple-iphone-xr-64-gb-black-B5VjItdh0gabS6wVPnWSfLRO.html?page=1&pos=24&cur_pos=24&ads_per_page=25&lid=r-Yir0ViiOPtfdrsYx&indexPosition=23
+2026-09-02 14:20:04,625 | INFO | [jiji.ng] 🟢 [EXTRACTED 60/200] -> https://jiji.ng/auyo/power-equipments/sp-80kva-perkins-generator-soundproof-uYL28hhH7qu4DzYfU1y3ZYQ8.html?page=1&pos=1&cur_pos=1&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=0
+2026-09-02 14:20:07,559 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:08,684 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:09,554 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:10,882 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:11,953 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:13,193 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:20:13,236 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:20:14,043 | INFO | [jiji.ng] 🟢 [EXTRACTED 61/200] -> https://jiji.ng/babura/power-equipments/sp-30kva-perkins-soundproof-generator-grqTJuNdoDbCnKEhGZVoeqf6.html?page=1&pos=4&cur_pos=4&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=3
+2026-09-02 14:20:14,684 | INFO | [jiji.ng] 🟢 [EXTRACTED 62/200] -> https://jiji.ng/biriniwa/power-equipments/33kv-polymer-drop-out-fuse-cutout-hgcsIHizbjJmrE3CCTCq5Bjl.html?page=1&pos=8&cur_pos=8&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=7
+2026-09-02 14:20:24,602 | INFO | [jiji.ng] 🟢 [EXTRACTED 63/200] -> https://jiji.ng/garki-i/power-equipments/350kva-brand-new-perkins-generator-soundproof-2-years-warranty-aN7AbXQR9daxHvQpx6kQT24n.html?page=1&pos=7&cur_pos=7&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=6
+2026-09-02 14:20:29,593 | INFO | [jiji.ng] 🟢 [EXTRACTED 64/200] -> https://jiji.ng/garki-i/power-equipments/fuel-efficient-40kva-perkins-diesel-generator-set-yWxby0TJ5whiZYzsR7HJ3fKi.html?page=1&pos=3&cur_pos=3&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=2
+2026-09-02 14:20:34,543 | INFO | [jiji.ng] 🟢 [EXTRACTED 65/200] -> https://jiji.ng/garki-i/power-equipments/standard-200kva-perkins-soundproof-diesel-generator-kH3b0KNq7x8oLuCwga2l8HUU.html?page=1&pos=6&cur_pos=6&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=5
+2026-09-02 14:20:37,666 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:38,639 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:39,588 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:40,310 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:41,407 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:20:42,195 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:20:42,208 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:20:42,528 | INFO | [jiji.ng] 🟢 [EXTRACTED 66/200] -> https://jiji.ng/garki/power-equipments/80kva-soundproof-durable-copper-oil-tIsKet6eSfPNXB2qY8EepKnq.html?page=1&pos=2&cur_pos=2&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=1
+2026-09-02 14:20:44,586 | INFO | [jiji.ng] 🟢 [EXTRACTED 67/200] -> https://jiji.ng/gwarinpa/cars/lexus-rx-2012-black-7pgJiblqgIpfoZdx6TF5sqoK.html?page=1&pos=14&cur_pos=14&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=13
+2026-09-02 14:20:49,613 | INFO | [jiji.ng] 🟢 [EXTRACTED 68/200] -> https://jiji.ng/gwarinpa/cars/lexus-rx-350-awd-2013-white-e1a0DPAPwh3pYG297J49lf7c.html?page=1&pos=12&cur_pos=12&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=11
+2026-09-02 14:20:54,609 | INFO | [jiji.ng] 🟢 [EXTRACTED 69/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-14-pro-128-gb-purple-rO0MsJevCTDX7uEqtiLF1kXO.html?page=1&pos=18&cur_pos=18&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=17
+2026-09-02 14:21:04,536 | INFO | [jiji.ng] 🟢 [EXTRACTED 70/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-xr-64-gb-black-uRGYhqhRwA2QtYbJKfX5JvKr.html?page=1&pos=23&cur_pos=23&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=22
+2026-09-02 14:21:07,515 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:08,608 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:09,717 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:10,733 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:11,901 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:12,776 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:21:12,791 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:21:13,438 | INFO | [jiji.ng] 🟢 [EXTRACTED 71/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-xr-64-gb-blue-BIQxgzpw8isgd1UG8Fdis3bZ.html?page=1&pos=21&cur_pos=21&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=20
+2026-09-02 14:21:14,614 | INFO | [jiji.ng] 🟢 [EXTRACTED 72/200] -> https://jiji.ng/ikeja/power-equipments/legrand-special-socket-for-your-luxury-homes-and-hotels-mzMgrpRQhoCYOeGNavyPNqM1.html?page=1&pos=9&cur_pos=9&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=8
+2026-09-02 14:21:19,647 | INFO | [jiji.ng] 🟢 [EXTRACTED 73/200] -> https://jiji.ng/jahi/cars/ford-sport-trac-2009-white-6giVl6z6mHWrasb7JXhf849P.html?page=1&pos=17&cur_pos=17&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=16
+2026-09-02 14:21:24,664 | INFO | [jiji.ng] 🟢 [EXTRACTED 74/200] -> https://jiji.ng/jahi/cars/lexus-rx-2019-white-msMh31Pty379pMzVPMf7Yooo.html?page=1&pos=15&cur_pos=15&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=14
+2026-09-02 14:21:29,601 | INFO | [jiji.ng] 🟢 [EXTRACTED 75/200] -> https://jiji.ng/jahi/cars/toyota-highlander-sport-2010-gray-6xpN2tZFQVa1ptOFkwYu6b8a.html?page=1&pos=13&cur_pos=13&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=12
+2026-09-02 14:21:32,845 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:33,998 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:34,908 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:35,692 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:36,873 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:21:37,713 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:21:37,730 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:21:38,297 | INFO | [jiji.ng] 🟢 [EXTRACTED 76/200] -> https://jiji.ng/katampe/cars/toyota-venza-le-4dr-wagon-3-5l-6cyl-6a-2014-gray-czHlbLySo5nY08En7w4WPegA.html?page=1&pos=16&cur_pos=16&ads_per_page=25&lid=r-HRa1r7CKRwz8X7nL&indexPosition=15
+2026-09-02 14:21:45,119 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/toyota-venza-2014-green-5vjrtrtmnfO9CcTUFShtz8zj.html?page=1%26pos=21%26cur_pos=21%26ads_per_page=26%26lid=r-Rp75emz_5JObG2jA%26indexPosition=20&type=report-abuse
+2026-09-02 14:22:14,505 | INFO | [jiji.ng] 🟢 [EXTRACTED 77/200] -> https://jiji.ng/dutse-jigawa/power-equipments/perkins-30kva-generator-very-sound-reliable-2kaugucmI9m4bXzxGMb3Ae5.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=14
+2026-09-02 14:22:19,614 | INFO | [jiji.ng] 🟢 [EXTRACTED 78/200] -> https://jiji.ng/garki-i/power-equipments/200kva-perkins-generator-soundproof-100-copper-wire-mZxF58EGzU9eWomiTA6VFetL.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=13
+2026-09-02 14:22:44,645 | INFO | [jiji.ng] 🟢 [EXTRACTED 79/200] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-glc-class-2017-white-iB3z7S23iYJmzxbQ1LBHny0X.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=4
+2026-09-02 14:22:49,650 | INFO | [jiji.ng] 🟢 [EXTRACTED 80/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-11-64-gb-white-iBl2FCiyrN2nMH9qiNyDw4T8.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=17
+2026-09-02 14:22:52,875 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:22:53,731 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:22:54,881 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:22:56,002 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:22:57,214 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:22:58,256 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:22:58,271 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:22:59,648 | INFO | [jiji.ng] 🟢 [EXTRACTED 81/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-xr-64-gb-blue-rGGlkioAUGd59i6KAFEhe3QW.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=20
+2026-09-02 14:23:04,801 | INFO | [jiji.ng] 🟢 [EXTRACTED 82/200] -> https://jiji.ng/jahi/cars/lexus-nx-200-awd-2018-black-3Ptzqyb1mVgziLUV9yM4C0uk.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=3
+2026-09-02 14:23:09,615 | INFO | [jiji.ng] 🟢 [EXTRACTED 83/200] -> https://jiji.ng/jahi/cars/lexus-rx-350-awd-2019-white-s2KwtQYVazknzxsWgcprdyTT.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=7
+2026-09-02 14:23:29,240 | INFO | [jiji.ng] 🟢 [EXTRACTED 84/200] -> https://jiji.ng/lagos-abule-egba/mobile-phones/apple-iphone-se-2020-64-gb-black-7xGSQDqXWLoiGCn5Qbxew8cT.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-67Q0FZrD8xC-pfnr&indexPosition=22
+2026-09-02 14:23:31,535 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/lexus-rx-2010-silver-fl5Z90IZ99nCTAoEyF4TtfxO.html?page=1%26pos=7%26cur_pos=7%26ads_per_page=26%26lid=r-67Q0FZrD8xC-pfnr%26indexPosition=6&type=report-abuse
+2026-09-02 14:23:35,886 | INFO | [jiji.ng] 🟢 [EXTRACTED 85/200] -> https://jiji.ng/abuja/cars/mercedes-benz-glc-class-2016-blue-8LwQKkMO1WcR6fPrwaqzCihS.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-YJxDLh0aG9BQ9cYW&indexPosition=22
+2026-09-02 14:23:39,308 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:23:40,755 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:23:41,959 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:23:43,252 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:23:44,285 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:23:45,238 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:23:45,254 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:23:45,991 | INFO | [jiji.ng] 🟢 [EXTRACTED 86/200] -> https://jiji.ng/ajah/power-equipments/25mm-single-coleman-cable-nIHBHzOW5GCMcm17MCygksX8.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=8
+2026-09-02 14:23:46,451 | INFO | [jiji.ng] 🟢 [EXTRACTED 87/200] -> https://jiji.ng/alimosho/mobile-phones/new-mobile-phone-1-tb-black-5bOYdQsmLxpL0vhh0u1uUemX.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=12
+2026-09-02 14:24:05,841 | INFO | [jiji.ng] 🟢 [EXTRACTED 88/200] -> https://jiji.ng/central-business-district/cars/mercedes-benz-glc-class-2016-black-sK8bVThvGiTPjCXtYnelDivF.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=23
+2026-09-02 14:24:35,749 | INFO | [jiji.ng] 🟢 [EXTRACTED 89/200] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-c300-2009-gray-zRrlzorfD8GuQzH9xrpxgQhQ.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=20
+2026-09-02 14:24:40,830 | INFO | [jiji.ng] 🟢 [EXTRACTED 90/200] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-glc-class-2018-silver-i9cSezctjxuNjYbwwFPbudKy.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=19
+2026-09-02 14:24:43,545 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:24:44,650 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:24:45,809 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:24:47,061 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:24:47,931 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:24:48,801 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:24:48,817 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:24:49,955 | INFO | [jiji.ng] 🟢 [EXTRACTED 91/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-11-128-gb-black-cLtPKhmF9kf4hP5uxEjxRuEZ.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=17
+2026-09-02 14:24:50,942 | INFO | [jiji.ng] 🟢 [EXTRACTED 92/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-11-64-gb-white-cS1azqakqM4J4HoueX3SZw8G.html?page=1&pos=12&cur_pos=12&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=11
+2026-09-02 14:25:00,908 | INFO | [jiji.ng] 🟢 [EXTRACTED 93/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-pro-max-1-tb-white-xhKel9BMLOlYCP18U8ucQrvI.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=15
+2026-09-02 14:25:05,774 | INFO | [jiji.ng] 🟢 [EXTRACTED 94/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-14-plus-128-gb-blue-cTnVmzWJTszAoJBvhPhDRyEB.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=10
+2026-09-02 14:25:10,744 | INFO | [jiji.ng] 🟢 [EXTRACTED 95/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-xs-max-64-gb-gold-chQe7Y0Y6maRtKL1bO0nIhp1.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=9
+2026-09-02 14:25:13,893 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:15,196 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:16,413 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:17,751 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:18,880 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:20,058 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:25:20,102 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:25:20,555 | INFO | [jiji.ng] 🟢 [EXTRACTED 96/200] -> https://jiji.ng/ikeja/mobile-phones/new-apple-iphone-17-pro-256-gb-silver-ASWmAhn1klUkZfO4OzrebMBB.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=14
+2026-09-02 14:25:20,897 | INFO | [jiji.ng] 🟢 [EXTRACTED 97/200] -> https://jiji.ng/ikoyi-obalende/mobile-phones/oneplus-15-512-gb-graphite-svKpuwrsb4Bi9SrbmSX6p7bR.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=13
+2026-09-02 14:25:25,722 | INFO | [jiji.ng] 🟢 [EXTRACTED 98/200] -> https://jiji.ng/jahi/cars/mercedes-benz-glc-class-2017-red-7VYDMZDCEtBrCqTcSEJ8AKbN.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=18
+2026-09-02 14:25:30,832 | INFO | [jiji.ng] 🟢 [EXTRACTED 99/200] -> https://jiji.ng/kubwa/cars/toyota-highlander-platinum-awd-2023-gray-rGroozTQaDzdJB5luz40U3eT.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-3OdjiXijN6PUchwF&indexPosition=21
+2026-09-02 14:25:36,302 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/mercedes-benz-glc-class-2016-blue-8LwQKkMO1WcR6fPrwaqzCihS.html?page=1%26pos=23%26cur_pos=23%26ads_per_page=26%26lid=r-3OdjiXijN6PUchwF%26indexPosition=22&type=report-abuse
+2026-09-02 14:25:40,810 | INFO | [jiji.ng] 🟢 [EXTRACTED 100/200] -> https://jiji.ng/ajah/cars/mercedes-benz-glc-class-2018-black-3wGGOQUkjXORF7wRvP2YqjFm.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-gBGYG6oj3tNGSwMd&indexPosition=16
+2026-09-02 14:25:43,978 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:45,310 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:46,241 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:46,954 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:48,029 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:25:48,852 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:25:48,859 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:26:25,687 | INFO | [jiji.ng] 🟢 [EXTRACTED 101/200] -> https://jiji.ng/garki-i/power-equipments/maxmech-15000-12kva-petrol-generator-strong-durable-dXp0JQLPDCMXCU8hddiCio45.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=1
+2026-09-02 14:26:35,762 | INFO | [jiji.ng] 🟢 [EXTRACTED 102/200] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-glc-class-glc-300-4matic-awd-2023-white-AT2I6LNaeQmHQ3xRZcZoOta7.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=10
+2026-09-02 14:26:40,898 | INFO | [jiji.ng] 🟢 [EXTRACTED 103/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-12-128-gb-2Ktr7FUCT4ALCFIo0up8HpBV.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=20
+2026-09-02 14:26:45,826 | INFO | [jiji.ng] 🟢 [EXTRACTED 104/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-14-plus-128-gb-blue-yFwjASH96cvJpXOoLpXKCLpr.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=18
+2026-09-02 14:26:50,752 | INFO | [jiji.ng] 🟢 [EXTRACTED 105/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-14-plus-256-gb-white-uuzb3YJMv0jvPvNRK92mUQsA.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=19
+2026-09-02 14:26:53,713 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:26:54,948 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:26:56,481 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:26:57,813 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:26:59,083 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:26:59,873 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:26:59,883 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:27:05,898 | INFO | [jiji.ng] 🟢 [EXTRACTED 106/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2017-white-cjcS5JvHhLuv7IZzOC0JO1l3.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=12
+2026-09-02 14:27:10,784 | INFO | [jiji.ng] 🟢 [EXTRACTED 107/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2018-silver-plD94O0NFCzTlqGKDcPfzrib.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=15
+2026-09-02 14:27:15,846 | INFO | [jiji.ng] 🟢 [EXTRACTED 108/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2018-white-zFmQUxEID0X7vVD0gM0GHE7U.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=13
+2026-09-02 14:27:20,829 | INFO | [jiji.ng] 🟢 [EXTRACTED 109/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2022-gray-dvnE26oiB9n2BiHylWf58zAf.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-3hWxLHZQqU81DKWR&indexPosition=14
+2026-09-02 14:27:26,253 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/toyota-venza-2014-green-5vjrtrtmnfO9CcTUFShtz8zj.html?page=1%26pos=21%26cur_pos=21%26ads_per_page=26%26lid=r-fx1m7QgXUEY-jvq4%26indexPosition=20&type=report-abuse
+2026-09-02 14:27:30,922 | INFO | [jiji.ng] 🟢 [EXTRACTED 110/200] -> https://jiji.ng/ajah/mobile-phones/apple-iphone-14-pro-1-tb-gray-6pBZNGTNpM5EabdVpgwnIqrZ.html?page=1&pos=12&cur_pos=12&ads_per_page=26&lid=r-NfDYAmS2OchcY8Vg&indexPosition=11
+2026-09-02 14:27:34,080 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:27:35,071 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:27:36,276 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:27:37,529 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:27:38,747 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:27:39,596 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:27:39,611 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:27:40,851 | INFO | [jiji.ng] 🟢 [EXTRACTED 111/200] -> https://jiji.ng/alimosho/mobile-phones/new-mobile-phone-1-tb-black-5bOYdQsmLxpL0vhh0u1uUemX.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=9
+2026-09-02 14:27:45,645 | INFO | [jiji.ng] 🟢 [EXTRACTED 112/200] -> https://jiji.ng/amuwo-odofin/mobile-phones/samsung-galaxy-s10-5g-512-gb-blue-dRrM0Gsa4MnKykMJWjkBIVEZ.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=15
+2026-09-02 14:28:05,791 | INFO | [jiji.ng] 🟢 [EXTRACTED 113/200] -> https://jiji.ng/central-business-district/cars/mercedes-benz-c300-2022-black-ujyQDxaNYF9wixelT6qzp1T9.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=19
+2026-09-02 14:28:15,716 | INFO | [jiji.ng] 🟢 [EXTRACTED 114/200] -> https://jiji.ng/garki-i/power-equipments/itel-energy-power-tank-all-in-one-6969JRLmA7cM8OJhqa67cx8I.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=7
+2026-09-02 14:28:35,715 | INFO | [jiji.ng] 🟢 [EXTRACTED 115/200] -> https://jiji.ng/igando-ikotun/mobile-phones/infinix-smart-20-64-gb-gray-eMT8diJR62FXxQwBEoArr69v.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=16
+2026-09-02 14:28:38,626 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:28:39,903 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:28:40,847 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:28:42,144 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:28:43,422 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:28:44,276 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:28:44,294 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:28:44,837 | INFO | [jiji.ng] 🟢 [EXTRACTED 116/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-a36-128-gb-black-b6efvvLsWPv1YP8IJLxzMbC6.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=12
+2026-09-02 14:28:45,992 | INFO | [jiji.ng] 🟢 [EXTRACTED 117/200] -> https://jiji.ng/isolo/power-equipments/ecoflow-delta-pro-3-4kva-4kwh-solar-gen-power-station-5yrs-warranty-rz9bF2VeorVUj1ODTas9GEmI.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=8
+2026-09-02 14:28:50,820 | INFO | [jiji.ng] 🟢 [EXTRACTED 118/200] -> https://jiji.ng/lekki/cars/land-rover-range-rover-sport-p400-se-dynamic-4wd-2023-black-wcR5exBFFGqUxoh6f7JdtWcQ.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=20
+2026-09-02 14:28:56,082 | INFO | [jiji.ng] 🟢 [EXTRACTED 119/200] -> https://jiji.ng/lekki/cars/land-rover-range-rover-sport-p400-se-dynamic-4wd-2023-white-dCtlqPVrkwjOVAisiJgv1Y5w.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=21
+2026-09-02 14:29:00,883 | INFO | [jiji.ng] 🟢 [EXTRACTED 120/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2023-white-p1Puvt9gfUwT12kSHVScA9rR.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-G2toKve9SSBlydSb&indexPosition=23
+2026-09-02 14:29:04,050 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:05,381 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:06,691 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:07,836 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:08,883 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:09,865 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:29:09,880 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:29:10,952 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/toyota-venza-2014-green-5vjrtrtmnfO9CcTUFShtz8zj.html?page=1%26pos=21%26cur_pos=21%26ads_per_page=26%26lid=r-m13raCgbaSN49893%26indexPosition=20&type=report-abuse
+2026-09-02 14:29:11,358 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/abuja/cars/toyota-venza-2014-green-5vjrtrtmnfO9CcTUFShtz8zj.html?page=1%26pos=21%26cur_pos=21%26ads_per_page=26%26lid=r-xLXpQAlUcC0NLOzC%26indexPosition=20&type=report-abuse
+2026-09-02 14:29:11,991 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/lexus-es-350-2007-gray-jPBcOTA2TjTyQtA3PIqb6iET.html?page=1%26pos=17%26cur_pos=17%26ads_per_page=26%26lid=r-CMRfASwsKl_ofOgV%26indexPosition=16&type=report-abuse
+2026-09-02 14:29:12,396 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/lexus-es-350-2007-gray-jPBcOTA2TjTyQtA3PIqb6iET.html?page=1%26pos=17%26cur_pos=17%26ads_per_page=26%26lid=r-HmLbqlq3yjAAopZN%26indexPosition=16&type=report-abuse
+2026-09-02 14:29:13,965 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/lexus-es-350-2007-gray-jPBcOTA2TjTyQtA3PIqb6iET.html?page=1%26pos=17%26cur_pos=17%26ads_per_page=26%26lid=r-R3F3OL1Bd6XYdRyK%26indexPosition=16&type=report-abuse
+2026-09-02 14:29:14,867 | INFO | [jiji.ng] 🟢 [EXTRACTED 121/200] -> https://jiji.ng/ajah/cars/mercedes-benz-glc-class-2022-white-rOcjSm1Ot3F5VruXV4rsZQpG.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=18
+2026-09-02 14:29:20,889 | INFO | [jiji.ng] 🟢 [EXTRACTED 122/200] -> https://jiji.ng/alimosho/mobile-phones/samsung-galaxy-a33-5g-128-gb-black-yFxM4tGrzgkamriWVw333TT4.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=16
+2026-09-02 14:29:26,762 | INFO | [jiji.ng] 🟢 [EXTRACTED 123/200] -> https://jiji.ng/amuwo-odofin/cars/mercedes-benz-glc-class-amg-glc-43-awd-2025-black-dE8bfbhUCech81bGY5Suve3N.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=21
+2026-09-02 14:29:27,816 | INFO | [jiji.ng] 🟢 [EXTRACTED 124/200] -> https://jiji.ng/amuwo-odofin/mobile-phones/new-samsung-z-16-gb-black-yz0ptzerXwsJwyXfsjZEt7Jr.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=9
+2026-09-02 14:29:31,718 | INFO | [jiji.ng] 🟢 [EXTRACTED 125/200] -> https://jiji.ng/amuwo-odofin/mobile-phones/samsung-galaxy-z-fold4-256-gb-white-BydUiFBRl454QX3GWSV3poMz.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-wv2xh3tMZNFgA__O&indexPosition=0
+2026-09-02 14:29:34,796 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:35,758 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:36,865 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:38,225 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:39,247 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:29:40,067 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:29:40,081 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:29:40,736 | INFO | [jiji.ng] 🟢 [EXTRACTED 126/200] -> https://jiji.ng/amuwo-odofin/mobile-phones/samsung-z-16-gb-1blmukEuk3khAMOxzfLBJJLQ.html?page=1&pos=12&cur_pos=12&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=11
+2026-09-02 14:30:04,874 | INFO | [jiji.ng] 🟢 [EXTRACTED 127/200] -> https://jiji.ng/central-business-district/cars/new-xpeng-g9-ev-awd-2025-white-dSq5uFTk8DgkNvcsXCVhHQ5n.html?page=1&pos=7&cur_pos=7&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=6
+2026-09-02 14:30:06,751 | INFO | [jiji.ng] 🟢 [EXTRACTED 128/200] -> https://jiji.ng/durumi/cars/hyundai-santa-fe-2019-gray-mJ9vnkJSXyym0JnRYjYLUjGo.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=4
+2026-09-02 14:30:41,722 | INFO | [jiji.ng] 🟢 [EXTRACTED 129/200] -> https://jiji.ng/garki/power-equipments/80kva-soundproof-durable-copper-oil-tIsKet6eSfPNXB2qY8EepKnq.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=4
+2026-09-02 14:30:45,311 | INFO | [jiji.ng] 🟢 [EXTRACTED 130/200] -> https://jiji.ng/ifako-ijaiye/power-equipments/ecoflow-river-3-max-plus-1-200watt-surge-858wh-solar-power-station-xgiAEri88JKtWlsiDGwY3WWD.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=8
+2026-09-02 14:30:48,414 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:30:49,435 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:30:50,435 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:30:51,581 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:30:52,835 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:30:53,634 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:30:53,648 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:30:53,788 | INFO | [jiji.ng] 🟢 [EXTRACTED 131/200] -> https://jiji.ng/ikeja/cars/mercedes-benz-gle-class-2025-blue-mPDYwFhqOP7hDbYNXc2TPpw9.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-LgQm_Q0SmtGRqAJn&indexPosition=22
+2026-09-02 14:30:54,466 | INFO | [jiji.ng] 🟢 [EXTRACTED 132/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-pro-max-128-gb-white-3RyJbRDHZJ7A1hQrJw5Klmcg.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-4VshzEAcOU8N_19t&indexPosition=5
+2026-09-02 14:31:05,725 | INFO | [jiji.ng] 🟢 [EXTRACTED 133/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-a34-5g-128-gb-silver-g7loYekRpCMfIaLkhzOJcdw0.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=12
+2026-09-02 14:31:23,742 | INFO | [jiji.ng] 🟢 [EXTRACTED 134/200] -> https://jiji.ng/isolo/power-equipments/ecoflow-delta-3-air-1kva-2kwh-solar-power-station-5yrs-warranty-V3ZGoy2ARwh16ykmRKA6aqW.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=5
+2026-09-02 14:31:25,695 | INFO | [jiji.ng] 🟢 [EXTRACTED 135/200] -> https://jiji.ng/jabi/cars/mercedes-benz-s-class-s-550-2015-black-rQoesbixuibaALmoaIzVGGnc.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=3
+2026-09-02 14:31:28,473 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:29,671 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:30,862 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:32,190 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:33,360 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:34,333 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:31:34,344 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:31:34,683 | INFO | [jiji.ng] 🟢 [EXTRACTED 136/200] -> https://jiji.ng/jabi/power-equipments/yohako-5kva-24v-inverter-innlHt38g3RR2wCLoe6rScfn.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-4VshzEAcOU8N_19t&indexPosition=16
+2026-09-02 14:31:35,142 | INFO | [jiji.ng] 🟢 [EXTRACTED 137/200] -> https://jiji.ng/jahi/cars/mercedes-benz-c300-2022-white-CzCMWgbdHqOKxU4zNG18HNcb.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=1
+2026-09-02 14:31:35,770 | INFO | [jiji.ng] 🟢 [EXTRACTED 138/200] -> https://jiji.ng/kano/power-equipments/2kwh-meco-solar-generator-cLsDRMfd1iJqMqxeSeyVmo6L.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-4VshzEAcOU8N_19t&indexPosition=17
+2026-09-02 14:31:42,715 | INFO | [jiji.ng] 🟢 [EXTRACTED 139/200] -> https://jiji.ng/katampe/cars/new-honda-cr-v-2025-black-wJUFKybXdss9KuSpy6NlxW3f.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=5
+2026-09-02 14:31:44,884 | INFO | [jiji.ng] 🟢 [EXTRACTED 140/200] -> https://jiji.ng/lekki/cars/land-rover-range-rover-sport-2019-gray-k83axu693VyQ2aFbcud5NYX9.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-4VshzEAcOU8N_19t&indexPosition=20
+2026-09-02 14:31:48,021 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:49,022 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:50,258 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:51,343 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:52,009 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:31:53,296 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:31:53,303 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:31:53,543 | INFO | [jiji.ng] 🟢 [EXTRACTED 141/200] -> https://jiji.ng/lekki/cars/land-rover-range-rover-sport-2023-white-dd8BUKhZbbAr5Ns2HPzEZzoo.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-4VshzEAcOU8N_19t&indexPosition=18
+2026-09-02 14:31:53,949 | INFO | [jiji.ng] 🟢 [EXTRACTED 142/200] -> https://jiji.ng/lekki/cars/land-rover-range-rover-sport-p400-se-dynamic-4wd-2023-silver-5JTdCom6S4Ia7XuhdyNzO09B.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-LgQm_Q0SmtGRqAJn&indexPosition=18
+2026-09-02 14:31:58,691 | INFO | [jiji.ng] 🟢 [EXTRACTED 143/200] -> https://jiji.ng/lekki/cars/lexus-es-350-f-sport-design-fwd-2023-white-iPcgGhvgIXALBAmYdFKIErtR.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-4VshzEAcOU8N_19t&indexPosition=23
+2026-09-02 14:32:02,825 | INFO | [jiji.ng] 🟢 [EXTRACTED 144/200] -> https://jiji.ng/lekki/cars/mercedes-benz-c300-2024-black-1v5YfOMI6YwjHIV13zVGTI0Z.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-0L9xO1IMEXf53FuH&indexPosition=2
+2026-09-02 14:32:05,759 | INFO | [jiji.ng] 🟢 [EXTRACTED 145/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2020-black-fSTfXViQN3o1gRf5XZ3VDqe7.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=20
+2026-09-02 14:32:08,738 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:09,805 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:10,955 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:12,091 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:13,281 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:14,042 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:32:14,054 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:32:14,163 | INFO | [jiji.ng] 🟢 [EXTRACTED 146/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2022-white-Bq4GfuB2frbqOzpimAjjjY6i.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-qDlCPdXKXqtEC1KP&indexPosition=23
+2026-09-02 14:32:14,220 | INFO | [jiji.ng] 🟢 [EXTRACTED 147/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-2025-black-wveJVHhhIfyyURKeF4RAUUo6.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-LgQm_Q0SmtGRqAJn&indexPosition=21
+2026-09-02 14:32:14,334 | INFO | [jiji.ng] 🟢 [EXTRACTED 148/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-amg-glc-43-awd-2024-black-tSbijkA3JZeavTq5lqDIBbHn.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-LgQm_Q0SmtGRqAJn&indexPosition=19
+2026-09-02 14:32:14,483 | INFO | [jiji.ng] 🟢 [EXTRACTED 149/200] -> https://jiji.ng/lekki/cars/mercedes-benz-glc-class-glc-300-4matic-awd-2024-white-fezKWnhEzuObtjw83tMuNkwe.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-LgQm_Q0SmtGRqAJn&indexPosition=20
+2026-09-02 14:32:14,622 | INFO | [jiji.ng] 🟢 [EXTRACTED 150/200] -> https://jiji.ng/lekki/cars/mercedes-benz-gls-class-gls-450-4matic-awd-2025-black-cyXaMCntcr1wbK2ecls008Fq.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-wv2xh3tMZNFgA__O&indexPosition=20
+2026-09-02 14:32:15,659 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:16,450 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:17,770 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:18,890 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:19,993 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:32:20,765 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:32:20,779 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:32:21,269 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/lexus-es-350-2007-gray-jPBcOTA2TjTyQtA3PIqb6iET.html?page=1%26pos=17%26cur_pos=17%26ads_per_page=26%26lid=r-VIZ_lamNetzWfgXi%26indexPosition=16&type=report-abuse
+2026-09-02 14:32:25,699 | INFO | [jiji.ng] 🟢 [EXTRACTED 151/200] -> https://jiji.ng/agege/power-equipments/solar-generator-and-inverter-ggcpk3xakCnKxFmGcN50Iuee.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-1KySZ96vhSlI1R2V&indexPosition=8
+2026-09-02 14:32:57,702 | INFO | [jiji.ng] 🟢 [EXTRACTED 152/200] -> https://jiji.ng/asokoro/cars/lexus-es-350-fwd-2018-blue-uHvpLI6N4RwFTbgK1AqwdkjM.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-1KySZ96vhSlI1R2V&indexPosition=22
+2026-09-02 14:33:37,780 | INFO | [jiji.ng] 🟢 [EXTRACTED 153/200] -> https://jiji.ng/ikeja/power-equipments/2kwh-meco-solar-generator-oJ0Dtqv15TEH3GWw1k6duOVO.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-1KySZ96vhSlI1R2V&indexPosition=5
+2026-09-02 14:33:45,725 | INFO | [jiji.ng] 🟢 [EXTRACTED 154/200] -> https://jiji.ng/ikeja/power-equipments/meco-1kwh-500w-jUjMPEC4hnUnEb1TEkN0kk4o.html?page=1&pos=7&cur_pos=7&ads_per_page=26&lid=r-1KySZ96vhSlI1R2V&indexPosition=6
+2026-09-02 14:33:53,722 | INFO | [jiji.ng] 🟢 [EXTRACTED 155/200] -> https://jiji.ng/isolo/cars/lexus-rx-350-2025-black-3b4YXrAcmtVIfJ8NactExnB.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-1KySZ96vhSlI1R2V&indexPosition=21
+2026-09-02 14:33:56,657 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:33:57,813 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:33:58,974 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:34:00,496 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:34:01,725 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:34:02,682 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:34:02,693 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:34:03,724 | INFO | [jiji.ng] 🟢 [EXTRACTED 156/200] -> https://jiji.ng/kano/power-equipments/meco-2kwh-1200w-solar-generator-s4kZJkNIpt9iOTLCeEcvTVt8.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-1KySZ96vhSlI1R2V&indexPosition=0
+2026-09-02 14:34:26,241 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/agege/power-equipments/solar-generator-and-inverter-ggcpk3xakCnKxFmGcN50Iuee.html?page=1%26pos=9%26cur_pos=9%26ads_per_page=26%26lid=r-1KySZ96vhSlI1R2V%26indexPosition=8&type=report-abuse
+2026-09-02 14:34:30,765 | INFO | [jiji.ng] 🟢 [EXTRACTED 157/200] -> https://jiji.ng/ajah/cars/lexus-rx-350-awd-2025-white-z6ivcEO9Vpjj5ahQvXhO63X8.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=19
+2026-09-02 14:34:45,884 | INFO | [jiji.ng] 🟢 [EXTRACTED 158/200] -> https://jiji.ng/amuwo-odofin/cars/lexus-rx-350-f-sport-design-2025-gray-zevwtcfhQBI9zbk1cQZ4P4q3.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=23
+2026-09-02 14:34:50,718 | INFO | [jiji.ng] 🟢 [EXTRACTED 159/200] -> https://jiji.ng/auchi/mobile-phones/new-xiaomi-17-pro-max-512-gb-white-qau65y03JXaXFo72DE5r4Gsh.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=17
+2026-09-02 14:34:55,718 | INFO | [jiji.ng] 🟢 [EXTRACTED 160/200] -> https://jiji.ng/badagry/cars/lexus-rx-2024-white-1exazxAU2AA7qGWoBPweF7HW.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=18
+2026-09-02 14:34:58,870 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:34:59,803 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:35:00,818 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:35:01,914 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:35:03,115 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:35:04,100 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:35:04,114 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:35:05,885 | INFO | [jiji.ng] 🟢 [EXTRACTED 161/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-13-pro-max-128-gb-white-3RyJbRDHZJ7A1hQrJw5Klmcg.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=13
+2026-09-02 14:35:25,758 | INFO | [jiji.ng] 🟢 [EXTRACTED 162/200] -> https://jiji.ng/isolo/cars/lexus-ls-2022-white-oFTM8Hmu2whBzT1S5O35IgSg.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=21
+2026-09-02 14:35:35,782 | INFO | [jiji.ng] 🟢 [EXTRACTED 163/200] -> https://jiji.ng/kano/power-equipments/300w-dc-solar-generator-with-bluetooth-speaker-bulbs-and-panels-iwKVQbys1sOMY3Q49b8MOyrZ.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=4
+2026-09-02 14:35:40,711 | INFO | [jiji.ng] 🟢 [EXTRACTED 164/200] -> https://jiji.ng/lagos-island-west/solar-energy-products/meilifeng-2kwh-portable-solar-generator-power-station-2000wh-lifepo4-1wy1NdUxn3QMWPk4MuKOfUFg.html?page=1&pos=7&cur_pos=7&ads_per_page=26&lid=r-7OLj8yjpdsnO7E8D&indexPosition=6
+2026-09-02 14:35:51,270 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/agege/power-equipments/solar-generator-and-inverter-ggcpk3xakCnKxFmGcN50Iuee.html?page=1%26pos=9%26cur_pos=9%26ads_per_page=26%26lid=r-hypLWRlAqKgD0DGH%26indexPosition=8&type=report-abuse
+2026-09-02 14:35:55,875 | INFO | [jiji.ng] 🟢 [EXTRACTED 165/200] -> https://jiji.ng/ajah/cars/mercedes-benz-gle-class-2025-white-1pyALFrrLs83J18JcSEyfYY8.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-9aw7ZrVB7d1GqRqW&indexPosition=10
+2026-09-02 14:35:58,993 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:00,106 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:01,382 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:02,659 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:03,944 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:04,914 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:36:04,936 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:36:11,456 | INFO | [jiji.ng] 🟢 [EXTRACTED 166/200] -> https://jiji.ng/ikeja/mobile-phones/new-nokia-130-gray-dH1cMPNERgy21Hs1nKYMLLYo.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=20
+2026-09-02 14:36:15,717 | INFO | [jiji.ng] 🟢 [EXTRACTED 167/200] -> https://jiji.ng/ikeja/mobile-phones/new-nokia-2720-flip-512-gb-red-nAQk4fAKgs1dP5cu5a2nbOt1.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=21
+2026-09-02 14:36:25,843 | INFO | [jiji.ng] 🟢 [EXTRACTED 168/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-z-fold8-ultra-512-gb-fAeIqYoQWHvhbc38U1V6ITyt.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=22
+2026-09-02 14:36:30,865 | INFO | [jiji.ng] 🟢 [EXTRACTED 169/200] -> https://jiji.ng/isolo/cars/mercedes-benz-gle-class-gle-350e-4matic-2022-gold-rmSUhy8NTMUChk3QLZsE333s.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=13
+2026-09-02 14:36:35,864 | INFO | [jiji.ng] 🟢 [EXTRACTED 170/200] -> https://jiji.ng/isolo/cars/mercedes-benz-gle-class-gle-450-4matic-2023-white-pCMEfRA4hm8V75OvxShlr2zq.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=16
+2026-09-02 14:36:39,074 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:40,151 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:41,211 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:42,373 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:43,477 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:36:44,303 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:36:44,322 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:36:44,746 | INFO | [jiji.ng] 🟢 [EXTRACTED 171/200] -> https://jiji.ng/kano/power-equipments/2kwh-meco-solar-generator-cLsDRMfd1iJqMqxeSeyVmo6L.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=0
+2026-09-02 14:36:44,867 | INFO | [jiji.ng] 🟢 [EXTRACTED 172/200] -> https://jiji.ng/kano/power-equipments/2kwh-meco-solar-generator-cLsDRMfd1iJqMqxeSeyVmo6L.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-I9OXRqiq3LK0L9HS&indexPosition=0
+2026-09-02 14:36:45,866 | INFO | [jiji.ng] 🟢 [EXTRACTED 173/200] -> https://jiji.ng/kano/power-equipments/300w-dc-solar-generator-with-bluetooth-speaker-bulbs-and-panels-iwKVQbys1sOMY3Q49b8MOyrZ.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=4
+2026-09-02 14:36:50,791 | INFO | [jiji.ng] 🟢 [EXTRACTED 174/200] -> https://jiji.ng/kano/power-equipments/3600kw-8000kwh-itel-solar-generator-ak6krd85kve8wuV3Hz9SGOyD.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=8
+2026-09-02 14:37:20,842 | INFO | [jiji.ng] 🟢 [EXTRACTED 175/200] -> https://jiji.ng/lekki/cars/mercedes-benz-gle-class-gle-350-4matic-2023-black-rXIGP5eLmhANyj7cZKvFxZDd.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-44w-H6JbFkYR9Ss5&indexPosition=12
+2026-09-02 14:37:23,997 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:37:25,181 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:37:26,578 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:37:27,917 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:37:31,085 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:37:32,110 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:37:32,119 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:37:36,032 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/lexus-es-350-2007-gray-jPBcOTA2TjTyQtA3PIqb6iET.html?page=1%26pos=17%26cur_pos=17%26ads_per_page=26%26lid=r-xLXpQAlUcC0NLOzC%26indexPosition=16&type=report-abuse
+2026-09-02 14:37:40,653 | INFO | [jiji.ng] 🟢 [EXTRACTED 176/200] -> https://jiji.ng/apapa/mobile-phones/new-samsung-galaxy-a57-256-gb-blue-oQoKyka4MKSStusL0Lve9X1x.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-sCE49WzUBwA9hAtC&indexPosition=16
+2026-09-02 14:37:41,777 | INFO | [jiji.ng] 🟢 [EXTRACTED 177/200] -> https://jiji.ng/apapa/mobile-phones/new-samsung-galaxy-a57-256-gb-blue-oQoKyka4MKSStusL0Lve9X1x.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=16
+2026-09-02 14:37:53,793 | INFO | [jiji.ng] 🟢 [EXTRACTED 178/200] -> https://jiji.ng/asokoro/cars/new-land-rover-range-rover-sport-p530-dynamic-se-2025-black-eKFRg1BWnuK8IXYHNLHcFijH.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=22
+2026-09-02 14:37:58,830 | INFO | [jiji.ng] 🟢 [EXTRACTED 179/200] -> https://jiji.ng/asokoro/cars/new-land-rover-range-rover-sport-p530-dynamic-se-2025-black-eKFRg1BWnuK8IXYHNLHcFijH.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-ePihxvv49PfgXRyE&indexPosition=22
+2026-09-02 14:38:07,759 | INFO | [jiji.ng] 🟢 [EXTRACTED 180/200] -> https://jiji.ng/fagge/power-equipments/1kva-solar-generator-itel-energy-yrlqQV5Hbx5E5LIs7hR1hG31.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=8
+2026-09-02 14:38:10,971 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:38:12,146 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:38:13,361 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:38:14,645 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:38:15,430 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:38:16,324 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:38:16,338 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:38:22,825 | INFO | [jiji.ng] 🟢 [EXTRACTED 181/200] -> https://jiji.ng/gaduwa/power-equipments/cola-3600-prime-solar-generator-quiet-clean-emission-free-power-xxXtBxgRCuIb2OGO8nU31QCY.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=5
+2026-09-02 14:38:37,024 | INFO | [jiji.ng] 🟢 [EXTRACTED 182/200] -> https://jiji.ng/gwarinpa/power-equipments/colasolar-3600-plus-3-6kwh-2-2kva-solar-generator-3PsSoo4WvouJUCnxrBbUhoob.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=7
+2026-09-02 14:39:04,837 | INFO | [jiji.ng] 🟢 [EXTRACTED 183/200] -> https://jiji.ng/ikeja/mobile-phones/new-iridium-9555-4-gb-black-BqfpXSNNDiV0rcjSLSnJXIWD.html?page=1&pos=12&cur_pos=12&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=11
+2026-09-02 14:39:18,827 | INFO | [jiji.ng] 🟢 [EXTRACTED 184/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-s20-fe-5g-sd865-128-gb-35ogH9Jr9YhEpETtYM7ekz1z.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=13
+2026-09-02 14:39:32,942 | INFO | [jiji.ng] 🟢 [EXTRACTED 185/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-z-flip-5-256-gb-suYcwU0ZkGvIUHY48uSClras.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=9
+2026-09-02 14:39:35,942 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:39:37,318 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:39:38,372 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:39:39,715 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:39:40,832 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:39:41,656 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:39:41,698 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:39:46,883 | INFO | [jiji.ng] 🟢 [EXTRACTED 186/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-z-fold8-ultra-512-gb-gray-1vWhobMFYaoVvCH7HzeLY1Kn.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=14
+2026-09-02 14:40:00,880 | INFO | [jiji.ng] 🟢 [EXTRACTED 187/200] -> https://jiji.ng/ikeja/mobile-phones/samsung-galaxy-s24-ultra-512-gb-gray-kaesS6pGMZwBVe1PgbOpnnFR.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=12
+2026-09-02 14:40:14,894 | INFO | [jiji.ng] 🟢 [EXTRACTED 188/200] -> https://jiji.ng/ikoyi-obalende/mobile-phones/samsung-galaxy-fold-512-gb-graphite-dwgRZmcUOl3q0rDxCOfGquHl.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=17
+2026-09-02 14:40:28,805 | INFO | [jiji.ng] 🟢 [EXTRACTED 189/200] -> https://jiji.ng/ikoyi-obalende/power-equipments/3600kw-8000kwh-itel-solar-generator-NfDzBaUqpyR9whJnvGxlxF3.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=3
+2026-09-02 14:40:42,921 | INFO | [jiji.ng] 🟢 [EXTRACTED 190/200] -> https://jiji.ng/isolo/cars/lexus-rx-350-2025-black-3b4YXrAcmtVIfJ8NactExnB.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=23
+2026-09-02 14:40:46,121 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:40:47,393 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:40:48,709 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:40:50,063 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:40:51,370 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:40:52,524 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:40:52,538 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:40:56,872 | INFO | [jiji.ng] 🟢 [EXTRACTED 191/200] -> https://jiji.ng/kano/power-equipments/meco-2kwh-1200w-solar-generator-s4kZJkNIpt9iOTLCeEcvTVt8.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=0
+2026-09-02 14:42:06,850 | INFO | [jiji.ng] 🟢 [EXTRACTED 192/200] -> https://jiji.ng/lekki/power-equipments/3600kw-8000kwh-itel-solar-generator-8n3q8VMYFNMUU0j4Gy7DnABP.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-5r017dyONjR1p-Rp&indexPosition=2
+2026-09-02 14:42:21,401 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/mercedes-benz-gle-class-2025-white-1pyALFrrLs83J18JcSEyfYY8.html?page=1%26pos=11%26cur_pos=11%26ads_per_page=26%26lid=r-9aw7ZrVB7d1GqRqW%26indexPosition=10&type=report-abuse
+2026-09-02 14:42:26,008 | INFO | [jiji.ng] 🟢 [EXTRACTED 193/200] -> https://jiji.ng/alimosho/mobile-phones/samsung-galaxy-a25-128-gb-blue-7JtchBemyBOAc00fCkMWRkAM.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-TOAsgZWjPAlafUII&indexPosition=2
+2026-09-02 14:42:31,019 | INFO | [jiji.ng] 🟢 [EXTRACTED 194/200] -> https://jiji.ng/amuwo-odofin/cars/mercedes-benz-gle-class-2021-silver-1tY0MYcpWnup5n05Dmi8ixm9.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=21
+2026-09-02 14:42:35,844 | INFO | [jiji.ng] 🟢 [EXTRACTED 195/200] -> https://jiji.ng/auchi/mobile-phones/new-oppo-find-x9-ultra-512-gb-black-5Xi1xigaprf9S8y4t4N8QBHb.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=7
+2026-09-02 14:42:38,972 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:42:40,213 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:42:41,079 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:42:42,280 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:42:43,457 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:42:44,409 | INFO | HTTP Request: POST https://bbheeuvqnehrbvbxctyu.supabase.co/rest/v1/merchant_products?columns=%22embedding%22%2C%22image_url%22%2C%22detected_price%22%2C%22merchant_domain%22%2C%22source_url%22%2C%22product_id%22%2C%22content%22%2C%22product_title%22 "HTTP/2 201 Created"
+2026-09-02 14:42:44,424 | INFO | ⚡ Successfully batch-upserted 5 vectors to Supabase!
+2026-09-02 14:42:44,753 | INFO | [jiji.ng] 🟢 [EXTRACTED 196/200] -> https://jiji.ng/gbagada/mobile-phones/new-oneplus-15-256-gb-8PmRZVrb7jef9M4PqtQf8Fu.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=1
+2026-09-02 14:42:45,857 | INFO | [jiji.ng] 🟢 [EXTRACTED 197/200] -> https://jiji.ng/ikeja/cars/mercedes-benz-c300-2024-black-aSDQYMJLN0WXbQRcfjAQubii.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=20
+2026-09-02 14:42:50,813 | INFO | [jiji.ng] 🟢 [EXTRACTED 198/200] -> https://jiji.ng/ikeja/cars/mercedes-benz-gle-class-2025-blue-mPDYwFhqOP7hDbYNXc2TPpw9.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=18
+2026-09-02 14:42:55,884 | INFO | [jiji.ng] 🟢 [EXTRACTED 199/200] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-12-pro-128-gb-gold-CenK0QWdBeiQIO4CzJtHjcM2.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=5
+2026-09-02 14:43:10,877 | INFO | [jiji.ng] 🟢 [EXTRACTED 200/200] -> https://jiji.ng/ikeja/mobile-phones/new-samsung-galaxy-z-trifold-512-gb-black-hRVrRrXX2HbzP2xBmrcfkJSw.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-0rxsybedCAcTHlvr&indexPosition=4
+2026-09-02 14:43:11,557 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 200 products directly to Supabase in 1863.26s.
+2026-09-02 14:43:14,056 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:51:52,966 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 14:51:52,968 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 14:51:54,721 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/
+2026-09-02 14:51:55,146 | INFO | [jiji.ng] 🟢 [EXTRACTED 1/200] -> https://jiji.ng/aba-north/mobile-phones/apple-iphone-15-128-gb-pink-waxzIiouTuf4w5XaGIuizgMc.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-nPMEzVzACGG2jlOx&indexPosition=15
+2026-09-02 14:51:56,237 | INFO | [jiji.ng] 🟢 [EXTRACTED 2/200] -> https://jiji.ng/agege/power-equipments/50mm-4core-armoured-cable-nigerchin-nigeria-950VUs8ernw4GNlsHVjirIUD.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-nPMEzVzACGG2jlOx&indexPosition=23
+2026-09-02 14:51:56,719 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 2 products directly to Supabase in 3.75s.
+2026-09-02 14:52:10,781 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 14:52:10,783 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 14:52:12,140 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/
+2026-09-02 14:52:12,788 | INFO | [jiji.ng] 🟢 [EXTRACTED 1/20] -> https://jiji.ng/aba-north/mobile-phones/apple-iphone-15-128-gb-pink-waxzIiouTuf4w5XaGIuizgMc.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=15
+2026-09-02 14:52:13,751 | INFO | [jiji.ng] 🟢 [EXTRACTED 2/20] -> https://jiji.ng/agege/power-equipments/50mm-4core-armoured-cable-nigerchin-nigeria-950VUs8ernw4GNlsHVjirIUD.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=23
+2026-09-02 14:52:15,120 | INFO | [jiji.ng] 🟢 [EXTRACTED 3/20] -> https://jiji.ng/alimosho/cars/toyota-highlander-2010-gray-58MBy0ezKjatiYN402cFp6Wn.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=5
+2026-09-02 14:52:15,837 | INFO | [jiji.ng] 🟢 [EXTRACTED 4/20] -> https://jiji.ng/alimosho/mobile-phones/apple-iphone-12-128-gb-green-a7iXpWeTuedZjnW2o9HGbUT7.html?page=1&pos=12&cur_pos=12&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=11
+2026-09-02 14:52:16,901 | INFO | [jiji.ng] 🟢 [EXTRACTED 5/20] -> https://jiji.ng/amuwo-odofin/mobile-phones/apple-iphone-17-256-gb-white-d4wdoHUrqriaiN6WV2Tlwexr.html?page=1&pos=18&cur_pos=18&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=17
+2026-09-02 14:52:20,619 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:21,648 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:22,718 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:23,931 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:25,150 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:25,391 | INFO | [jiji.ng] 🟢 [EXTRACTED 6/20] -> https://jiji.ng/asaba/mobile-phones/new-oppo-a78-4g-256-gb-orange-hufQdMuSocSqDUw3jA8ZXX1f.html?page=1&pos=17&cur_pos=17&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=16
+2026-09-02 14:52:26,596 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:27,732 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:28,812 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:30,139 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:31,349 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:32,720 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:33,047 | INFO | [jiji.ng] 🟢 [EXTRACTED 7/20] -> https://jiji.ng/central-business-district/cars/toyota-venza-le-2011-white-kzKgwT8PvC3x64MmnuZbA2J7.html?page=1&pos=4&cur_pos=4&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=3
+2026-09-02 14:52:34,156 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:35,689 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:36,951 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:38,506 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:39,819 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:41,094 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:42,451 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:42,684 | INFO | [jiji.ng] 🟢 [EXTRACTED 8/20] -> https://jiji.ng/garki-i/power-equipments/fuel-efficient-40kva-perkins-diesel-generator-set-yWxby0TJ5whiZYzsR7HJ3fKi.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=22
+2026-09-02 14:52:43,882 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:45,038 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:46,328 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:47,656 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:49,058 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:50,230 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:51,394 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:52,333 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:52,739 | INFO | [jiji.ng] 🟢 [EXTRACTED 9/20] -> https://jiji.ng/garki-i/power-equipments/perkins-40kva-soundproof-diesel-generator-2-years-warranty-xBRlZKjmb54QRDeHznNxA8Yi.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=21
+2026-09-02 14:52:54,003 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:55,124 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:56,292 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:57,513 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:52:58,857 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:00,080 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:01,242 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:02,085 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:03,576 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:03,830 | INFO | [jiji.ng] 🟢 [EXTRACTED 10/20] -> https://jiji.ng/garki-i/power-equipments/portable-4-5kva-ipower-soundproof-inverter-generator-pUD7tvPXNsYRmXK5C8Vjvau0.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=20
+2026-09-02 14:53:05,042 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:06,156 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:07,152 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:08,321 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:09,593 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:10,807 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:11,898 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:12,713 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:14,117 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:15,100 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:15,433 | INFO | [jiji.ng] 🟢 [EXTRACTED 11/20] -> https://jiji.ng/garki-ii/cars/honda-accord-2019-black-wWswc5dgEyD4SfmwFwOSwg0v.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=1
+2026-09-02 14:53:16,756 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:17,895 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:18,917 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:20,337 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:21,612 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:22,996 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:24,044 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:24,826 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:26,171 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:27,187 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:28,063 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:28,404 | INFO | [jiji.ng] 🟢 [EXTRACTED 12/20] -> https://jiji.ng/ikeja/cars/toyota-echo-sedan-2005-red-g9gdCmodHDjINxirjOmb0nem.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=4
+2026-09-02 14:53:29,807 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:30,993 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:32,141 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:33,465 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:34,730 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:35,985 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:37,112 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:37,976 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:39,521 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:40,646 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:41,770 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:42,486 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:42,768 | INFO | [jiji.ng] 🟢 [EXTRACTED 13/20] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-12-pro-512-gb-white-69VBv3rVasqnV9wKnw1iRNvC.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=13
+2026-09-02 14:53:43,962 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:45,021 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:46,039 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:47,309 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:48,546 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:49,870 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:50,896 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:51,755 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:53,170 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:54,293 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:55,177 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:56,017 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:57,215 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:57,551 | INFO | [jiji.ng] 🟢 [EXTRACTED 14/20] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-14-pro-128-gb-purple-rO0MsJevCTDX7uEqtiLF1kXO.html?page=1&pos=15&cur_pos=15&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=14
+2026-09-02 14:53:58,692 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:53:59,917 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:00,987 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:02,225 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:03,570 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:04,894 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:06,053 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:06,861 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:08,142 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:09,270 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:10,069 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:10,770 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:11,920 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:13,128 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:13,391 | INFO | [jiji.ng] 🟢 [EXTRACTED 15/20] -> https://jiji.ng/ikeja/mobile-phones/infinix-note-60-pro-256-gb-fS9z2dSwQmNAgNCvWKPljTBs.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=12
+2026-09-02 14:54:14,563 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:15,752 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:16,811 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:18,191 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:19,440 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:20,642 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:21,609 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:22,410 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:23,775 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:24,800 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:25,592 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:26,292 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:27,469 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:28,658 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:30,032 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:30,438 | INFO | [jiji.ng] 🟢 [EXTRACTED 16/20] -> https://jiji.ng/ikeja/mobile-phones/samsung-galaxy-s21-5g-128-gb-silver-mdZgNZ8Aik4LZXEsS508YwNu.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=9
+2026-09-02 14:54:31,580 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:32,789 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:33,911 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:35,235 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:36,609 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:37,918 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:38,974 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:40,062 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:41,267 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:42,373 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:43,166 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:43,903 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:45,135 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:46,307 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:47,371 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:48,627 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:48,926 | INFO | [jiji.ng] 🟢 [EXTRACTED 17/20] -> https://jiji.ng/ikeja/mobile-phones/samsung-galaxy-s23-ultra-256-gb-black-7XcFdzDRdMP0bKpcLE4yyCib.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=10
+2026-09-02 14:54:50,248 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:51,418 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:52,411 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:53,566 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:54,836 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:56,045 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:57,182 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:58,116 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:54:59,411 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:00,556 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:01,406 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:02,158 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:03,485 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:04,662 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:05,768 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:07,034 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:08,345 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:08,628 | INFO | [jiji.ng] 🟢 [EXTRACTED 18/20] -> https://jiji.ng/isolo/cars/hyundai-ix35-2013-gray-k2cjlriOFgS9Rdrjmb6bKDNt.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=8
+2026-09-02 14:55:09,959 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:11,092 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:12,349 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:13,669 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:15,035 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:16,286 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:17,422 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:18,243 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:19,618 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:20,764 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:21,565 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:22,346 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:23,612 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:24,692 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:25,875 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:27,110 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:28,435 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:29,400 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:29,866 | INFO | [jiji.ng] 🟢 [EXTRACTED 19/20] -> https://jiji.ng/isolo/cars/toyota-highlander-2008-green-sBpWDENaCXBi7SgJyegU74d4.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=7
+2026-09-02 14:55:31,212 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:32,291 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:33,487 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:34,760 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:36,067 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:37,238 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:38,262 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:39,243 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:40,619 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:41,825 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:42,581 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:43,557 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:44,798 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:46,129 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:47,187 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:48,496 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:49,991 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:50,804 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:51,970 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 14:55:52,222 | INFO | [jiji.ng] 🟢 [EXTRACTED 20/20] -> https://jiji.ng/isolo/power-equipments/itel-energy-6kw-hybrid-solar-inverter-oUFrLutNjw8gyF7X9D1F5zBO.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=19
+2026-09-02 14:55:53,360 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 20 products directly to Supabase in 222.58s.
+2026-09-02 14:55:53,371 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"

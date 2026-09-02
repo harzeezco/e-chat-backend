@@ -382,14 +382,8 @@ async def flush_batch_to_supabase(batch_list: list, base_domain: str):
         })
 
     if payloads:
-        try:
-            await asyncio.to_thread(
-                supabase.table("merchant_products").upsert(payloads).execute
-            )
-            logger.info(
-                f"⚡ Successfully batch-upserted {len(payloads)} vectors to Supabase!")
-        except Exception as db_err:
-            logger.error(f"❌ Supabase Batch Error: {db_err}")
+        with open('products.json', 'w', encoding='utf-8') as f:
+            f.write(payloads)
 
     batch_list.clear()
 
@@ -538,8 +532,8 @@ if __name__ == "__main__":
     try:
         asyncio.run(async_run_engine(
             "https://jiji.ng/",
-            max_pages=1000,
-            num_downloaders=3,
+            max_pages=20,
+            num_downloaders=4,
             politeness_delay=1.0
         ))
     except KeyboardInterrupt:
