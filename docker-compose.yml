@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: local_pgvector
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ecommerce_agent
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    
+  api:
+    build: .
+    container_name: local_fastapi
+    restart: always
+    ports: 
+      - "8000:8000"
+    environment:
+      - DB_DSN=postgresql://admin:password@postgres:5432/ecommerce_agent
+    depends_on:
+      - postgres
+    
+volumes:
+  pgdata:
+

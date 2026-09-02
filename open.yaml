@@ -1,0 +1,211 @@
+openapi: 3.0.3
+info: 
+  title: AskFatsta
+  version: v1
+  description: "The Ai that knows your customer"
+
+security:
+  - OAuthClientCredentials:
+      - products
+
+
+servers:
+  - url: "https://askfasta.com"
+    description: "production environment"
+  - url: "https://localhost:8000"
+    description: "localhost environment"
+
+tags: 
+  - name: Tenant
+    description: Merchant and store ownership management
+  - name: Create Products
+    description: Create Product 
+
+paths: 
+  /products:
+    
+    get:
+      parameters:
+      - name: offset
+        in: query
+        schema: 
+          type: integer
+        required: false
+      - name: limit
+        in: query
+        schema: 
+          type: integer
+          default: 5
+        required: false
+      tags:
+        - Products
+      summary: List products
+      description: Use this endpoint to browse all products in the catalogs
+      operationId: getAllProducts
+      responses:
+        "200": 
+          $ref: "#/components/responses/AllProductResponse"
+        "401": 
+          $ref: "#/components/responses/UnAuthorizedErrorResponse"
+        # default: "#/components/schemas/AllProducts"
+    post:
+      tags:
+        - Create Products
+      summary: Create products
+      description: Use this endpoint to browse all products in the catalogs
+      operationId: createProducts
+      requestBody:
+        $ref: "#/components/requestBodies/ProductRequest"
+      responses:
+        "200": 
+          $ref: "#/components/responses/AllProductResponse"
+        "401": 
+          $ref: "#/components/responses/UnAuthorizedErrorResponse"
+        # default: "#/components/schemas/AllProducts"
+  /products/{id}:
+    parameters:
+      - name: id
+        in: path
+        schema: 
+          type: string
+        required: true
+        example: "10001"
+
+    put:
+      tags:
+        - Update Product
+      summary: Update product's Details
+      description: Use this endpoint to update product's
+      requestBody:
+        $ref: "#/components/requestBodies/ProductRequest"
+      responses:
+        "200": 
+          $ref: "#/components/responses/AllProductResponse"
+        "401": 
+          $ref: "#/components/responses/UnAuthorizedErrorResponse"
+    
+    delete:
+      tags:
+        - Delete Product
+      summary: Delete products
+      description: Use this endpoint to delete products from a catalogs
+      operationId: deleteProducts
+      responses:
+        "200": 
+          $ref: "#/components/responses/AllProductResponse"
+        "401": 
+          $ref: "#/components/responses/UnAuthorizedErrorResponse"
+
+
+components: 
+   securitySchemes:
+     OAuthClientCredentials:
+       type: oauth2
+       flows:
+         clientCredentials:
+           tokenUrl: "https://localhost:8000"
+           scopes:
+             products: Grants full admin access
+   requestBodies:
+     ProductRequest:
+       description: Product Details
+       content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/Product"
+
+   responses:
+     ProductResponse:
+        description: Product Details
+        content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/Product"
+
+     AllProductResponse:
+        description: Product Details
+        content:
+         application/json:
+           schema:
+             allOf:
+               - $ref: "#/components/schemas/PaginatedResult"
+               - type: object
+                 properties: 
+                   data:
+                     $ref: "#/components/schemas/AllProducts"
+             
+
+     ClientErrorResponse:
+        description: Error occurred
+        content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/Error"
+
+     NotFoundErrorResponse:
+        description: Resource not found
+        content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/Error"
+
+     UnAuthorizedErrorResponse:
+        description: Unauthorized! Authentication required
+        content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/Error"
+     
+     
+   schemas: 
+     PaginatedResult:
+       type: object
+       properties: 
+         offset:
+           type: integer
+           description: Page offset
+           example: 10
+         limit: 
+          type: integer
+          description: Page size limit
+          example: 5
+         total:
+          type: integer
+          description: Total number of records across all pages 
+          example: 10
+         data: 
+            type: array
+            items: {}
+          
+     Product: 
+       type: object
+       properties:
+         id:
+           type: string
+           description: Product identifier
+           example: "10001"
+         name:
+           type: string
+           description: Product name
+           example: Coffee
+         price: 
+           type: number
+           description: Product price
+           example: 4.99
+         description:
+           type: string
+           description: Product description
+           example: Arabica coffee beans
+
+     AllProducts:
+          type: array
+          items:
+            $ref: "#/components/schemas/Product"
+
+     Error:
+        type: object
+        properties:
+          message: 
+            type: string
+            example: Error occurred
+
