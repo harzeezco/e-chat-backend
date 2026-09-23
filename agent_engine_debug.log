@@ -13533,3 +13533,40 @@ NotImplementedError
 2026-09-02 14:55:52,222 | INFO | [jiji.ng] 🟢 [EXTRACTED 20/20] -> https://jiji.ng/isolo/power-equipments/itel-energy-6kw-hybrid-solar-inverter-oUFrLutNjw8gyF7X9D1F5zBO.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-UYb7lfewWrZ-fb7C&indexPosition=19
 2026-09-02 14:55:53,360 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 20 products directly to Supabase in 222.58s.
 2026-09-02 14:55:53,371 | INFO | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-09-02 18:30:37,361 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 18:30:37,366 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 18:39:18,401 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 18:39:18,406 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 18:39:48,232 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 18:39:48,237 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 18:39:49,779 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 0 products directly to Supabase in 1.54s.
+2026-09-02 18:42:41,033 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 18:42:41,041 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 18:42:41,577 | ERROR | [jiji.ng] ❌ Network/Download Error on https://jiji.ng/: name 'proxy_mgr' is not defined
+2026-09-02 18:42:42,603 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 0 products directly to Supabase in 1.56s.
+2026-09-02 18:45:55,480 | INFO | 🚀 INGESTION ENGINE INITIALIZING ON https://jiji.ng/...
+2026-09-02 18:45:55,484 | INFO | [jiji.ng] 🗺️ Hunting for hidden Sitemap at https://jiji.ng/sitemap.xml...
+2026-09-02 18:45:57,318 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/
+2026-09-02 18:45:57,895 | INFO | [jiji.ng] 🟢 [EXTRACTED 1/20] -> https://jiji.ng/ajah/cars/kia-rio-2010-gray-37LqroDDuuv7W7AOgtsuamQG.html?page=1&pos=5&cur_pos=5&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=4
+2026-09-02 18:45:58,912 | INFO | [jiji.ng] 🟢 [EXTRACTED 2/20] -> https://jiji.ng/amuwo-odofin/cars/new-lexus-lx-2027-gray-yZYO2MvaM7PybeET3Tmj7LM2.html?page=1&pos=6&cur_pos=6&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=5
+2026-09-02 18:45:59,852 | INFO | [jiji.ng] 🟢 [EXTRACTED 3/20] -> https://jiji.ng/garki-i/power-equipments/400w-ffg-flood-light-with-remote-control-38NK1cpngPtgxkoRLxcu2yHE.html?page=1&pos=23&cur_pos=23&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=22
+2026-09-02 18:46:00,936 | INFO | [jiji.ng] 🟢 [EXTRACTED 4/20] -> https://jiji.ng/garki-i/power-equipments/cola-1000-plus-500w-solar-generator-portable-power-station-n1HGHeTSdgyibHBQZQuDGuUK.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=20
+2026-09-02 18:46:01,880 | INFO | [jiji.ng] 🟢 [EXTRACTED 5/20] -> https://jiji.ng/garki-i/power-equipments/perkins-40kva-soundproof-diesel-generator-2-years-warranty-xBRlZKjmb54QRDeHznNxA8Yi.html?page=1&pos=24&cur_pos=24&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=23
+2026-09-02 18:46:02,896 | INFO | [jiji.ng] 🟢 [EXTRACTED 6/20] -> https://jiji.ng/garki-i/power-equipments/portable-4-5kva-ipower-soundproof-inverter-generator-pUD7tvPXNsYRmXK5C8Vjvau0.html?page=1&pos=22&cur_pos=22&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=21
+2026-09-02 18:46:03,781 | INFO | [jiji.ng] 🟢 [EXTRACTED 7/20] -> https://jiji.ng/gwarinpa/cars/mercedes-benz-e43-amg-3-0-awd-2018-black-bafJPZzMMtIjd8YGkUnNy14w.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=1
+2026-09-02 18:46:04,862 | INFO | [jiji.ng] 🟢 [EXTRACTED 8/20] -> https://jiji.ng/igando-ikotun/cars/lexus-es-350-2010-red-BXUKJbhLdgfRHZyNHDPpaZrX.html?page=1&pos=1&cur_pos=1&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=0
+2026-09-02 18:46:05,799 | INFO | [jiji.ng] 🟢 [EXTRACTED 9/20] -> https://jiji.ng/ikeja/cars/toyota-echo-sedan-2005-red-g9gdCmodHDjINxirjOmb0nem.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=2
+2026-09-02 18:46:06,927 | INFO | [jiji.ng] 🟢 [EXTRACTED 10/20] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-12-pro-512-gb-white-69VBv3rVasqnV9wKnw1iRNvC.html?page=1&pos=13&cur_pos=13&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=12
+2026-09-02 18:46:07,896 | INFO | [jiji.ng] 🟢 [EXTRACTED 11/20] -> https://jiji.ng/ikeja/mobile-phones/apple-iphone-14-pro-128-gb-purple-rO0MsJevCTDX7uEqtiLF1kXO.html?page=1&pos=16&cur_pos=16&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=15
+2026-09-02 18:46:08,797 | INFO | [jiji.ng] 🟢 [EXTRACTED 12/20] -> https://jiji.ng/ikeja/mobile-phones/oppo-a1-pro-256-gb-orange-b4XVPlxuRd4exWl6K2ejWaY6.html?page=1&pos=14&cur_pos=14&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=13
+2026-09-02 18:46:10,113 | INFO | [jiji.ng] 🟢 [EXTRACTED 13/20] -> https://jiji.ng/ikeja/mobile-phones/samsung-galaxy-s23-ultra-256-gb-black-7XcFdzDRdMP0bKpcLE4yyCib.html?page=1&pos=10&cur_pos=10&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=9
+2026-09-02 18:46:10,987 | INFO | [jiji.ng] 🟢 [EXTRACTED 14/20] -> https://jiji.ng/ikorodu/mobile-phones/apple-iphone-xr-64-gb-gray-ynBR7PZjn6tpX46j1q5RJugW.html?page=1&pos=11&cur_pos=11&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=10
+2026-09-02 18:46:12,328 | INFO | [jiji.ng] 🟢 [EXTRACTED 15/20] -> https://jiji.ng/ikoyi-obalende/cars/ford-fusion-se-4dr-sedan-2-5l-4cyl-6a-2015-silver-621soA0y3iG8bbvRzcaAkMur.html?page=1&pos=9&cur_pos=9&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=8
+2026-09-02 18:46:12,907 | INFO | [jiji.ng] 🟢 [EXTRACTED 16/20] -> https://jiji.ng/isolo/power-equipments/itel-energy-6kw-hybrid-solar-inverter-oUFrLutNjw8gyF7X9D1F5zBO.html?page=1&pos=20&cur_pos=20&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=19
+2026-09-02 18:46:13,981 | INFO | [jiji.ng] 🟢 [EXTRACTED 17/20] -> https://jiji.ng/isolo/power-equipments/itel-energy-power-go-pro-320wh-tRnnD3zRtgRHSFW2i8DUTZw5.html?page=1&pos=19&cur_pos=19&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=18
+2026-09-02 18:46:15,035 | INFO | [jiji.ng] 🟢 [EXTRACTED 18/20] -> https://jiji.ng/lekki/cars/mercedes-benz-c43-2017-black-uQHQuP8yd1Tc9fDEKSgPuTKa.html?page=1&pos=8&cur_pos=8&ads_per_page=26&lid=r-JgKIa0xNwb7uOixZ&indexPosition=7
+2026-09-02 18:46:16,762 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/ajah/cars/kia-rio-2010-gray-37LqroDDuuv7W7AOgtsuamQG.html?page=1%26pos=5%26cur_pos=5%26ads_per_page=26%26lid=r-JgKIa0xNwb7uOixZ%26indexPosition=4&type=report-abuse
+2026-09-02 18:46:18,009 | INFO | [jiji.ng] 🟡 [SEARCHING] -> https://jiji.ng/login.html?url=/amuwo-odofin/cars/new-lexus-lx-2027-gray-yZYO2MvaM7PybeET3Tmj7LM2.html?page=1%26pos=6%26cur_pos=6%26ads_per_page=26%26lid=r-JgKIa0xNwb7uOixZ%26indexPosition=5&type=report-abuse
+2026-09-02 18:46:21,003 | INFO | [jiji.ng] 🟢 [EXTRACTED 19/20] -> https://jiji.ng/akure-south/mobile-phones/samsung-galaxy-s23-ultra-256-gb-black-B4H4MaZ9mBLFIGwlBH3W7z5Q.html?page=1&pos=3&cur_pos=3&ads_per_page=26&lid=r-Nu2Q7O9XwCnBpWDb&indexPosition=2
+2026-09-02 18:46:21,939 | INFO | [jiji.ng] 🟢 [EXTRACTED 20/20] -> https://jiji.ng/ajah/cars/mercedes-benz-c43-2017-blue-swIxOW5RUm00myjRGTX83ywj.html?page=1&pos=21&cur_pos=21&ads_per_page=26&lid=r-EAQWbkGCQdFSNWnB&indexPosition=20
+2026-09-02 18:46:22,645 | INFO | 🏁 INGESTION COMPLETE! Processed and streamed 20 products directly to Supabase in 27.16s.

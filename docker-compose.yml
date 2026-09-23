@@ -1,30 +1,64 @@
-version: '3.8'
-
 services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: local_fastapi
+
+    working_dir: /app
+
+    volumes:
+      - .:/app
+      - /app/.venv
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+    environment:
+      DB_DSN: postgresql://admin:password@postgres:5432/fintech_agent
+      REDIS_DSN: redis://redis:6379/0
+
+    
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
+
   postgres:
     image: pgvector/pgvector:pg16
+
     container_name: local_pgvector
-    restart: always
+
     environment:
+      POSTGRES_DB: fintech_agent
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: ecommerce_agent
+
     ports:
       - "5432:5432"
+
     volumes:
       - pgdata:/var/lib/postgresql/data
-    
-  api:
-    build: .
-    container_name: local_fastapi
-    restart: always
-    ports: 
-      - "8000:8000"
-    environment:
-      - DB_DSN=postgresql://admin:password@postgres:5432/ecommerce_agent
-    depends_on:
-      - postgres
-    
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d fintech_agent"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+    restart: unless-stopped
+  
+  redis:
+    image: redis:7-alpine
+
+    container_name: local_redis
+
+    restart: unless-stopped
+
 volumes:
   pgdata:
-
