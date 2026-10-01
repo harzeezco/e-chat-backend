@@ -26,3 +26,7 @@ dependencies = [
     "sqlalchemy>=2.0.54",
     "supabase>=2.31.0",
 ]
+
+[dependency-groups]
+dev = [
+]

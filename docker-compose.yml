@@ -10,7 +10,6 @@ services:
 
     volumes:
       - .:/app
-      - /app/.venv
 
     depends_on:
       postgres:
@@ -27,6 +26,28 @@ services:
     ports:
       - "8000:8000"
 
+    restart: unless-stopped
+
+  email_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    working_dir: /app
+    volumes:
+      - .:/app
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mailpit:
+        condition: service_started
+
+    environment:
+      DB_DSN: postgresql://admin:password@postgres:5432/fintech_agent
+
+    command: ["uv", "run", "python", "-m", "app.auth.workers.email_worker"]
+    stop_grace_period: 30s
     restart: unless-stopped
 
   postgres:
@@ -60,5 +81,13 @@ services:
 
     restart: unless-stopped
 
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: local_mailpit
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+
 volumes:
   pgdata:
+

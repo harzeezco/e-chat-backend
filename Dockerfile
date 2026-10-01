@@ -3,6 +3,10 @@ FROM ghcr.io/astral-sh/uv:debian-slim
 # Set working directory
 WORKDIR /app
 
+# Keep the environment outside the source directory mounted by Compose.
+ENV UV_PROJECT_ENVIRONMENT=/opt/venv
+ENV PATH="/opt/venv/bin:${PATH}"
+
 # 1. Bring in the official fast 'uv' binary (faster and cleaner than pip installing it!)
 COPY pyproject.toml uv.lock /app/
 
