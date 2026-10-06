@@ -21,9 +21,12 @@ class User(Base):
     __tablename__ = "users"
 
     id: Mapped[str] = mapped_column(String, primary_key=True)
+    
     email: Mapped[str] = mapped_column(String, unique=True, nullable=False)
+    
     password_hash: Mapped[str] = mapped_column(
         String, nullable=False)
+    
     role: Mapped[UserRole] = mapped_column(
         SqlEnum(
             UserRole,
@@ -33,6 +36,7 @@ class User(Base):
         ),
         nullable=False,
     )
+    
     status: Mapped[UserStatus] = mapped_column(
         SqlEnum(
             UserStatus,
@@ -43,6 +47,7 @@ class User(Base):
         ),
         nullable=False,
     )
+    
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),
         nullable=False,

@@ -93,11 +93,7 @@ def register(
             },
         )
 
-    start = time.perf_counter()
     hashed_password = hash_password(data.password)
-    print(
-        f"password hashing: {time.perf_counter() - start:.4f}s"
-    )
 
     user = User(
         id=f"usr_{generate_id(8)}",

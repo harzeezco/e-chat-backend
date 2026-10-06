@@ -7,8 +7,10 @@ from alembic import context
 from app.database import Base
 from app.auth.models.user import User
 from app.auth.models.registration_attempt import RegistrationAttempt
+from app.auth.models.login_attempt import LoginAttempt
 from app.auth.models.audit_log import AuditLog
 from app.auth.models.email_outbox import EmailOutbox
+from app.auth.models.refresh_token import RefreshToken
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
