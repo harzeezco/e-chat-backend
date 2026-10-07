@@ -5,6 +5,7 @@ from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 
 from app.auth.models.user import User, UserStatus
+from app.auth.models.revoked_access_token import RevokedAccessToken
 from app.auth.services.jwt_access_token import decode_access_token
 from app.database import get_db
 
@@ -18,10 +19,19 @@ def get_current_user(
 
     try:
         payload = decode_access_token(access_cookie)
+        
+        
     except jwt.InvalidTokenError:
         raise HTTPException(
             status_code=401, detail="Invalid or expired access token")
-
+        
+        
+    if session.get(RevokedAccessToken, payload["jti"]) is not None:
+        raise HTTPException(
+            status_code=401,
+            detail="Authentication required",
+        )
+        
     user_id = payload.get("sub")
     user = session.get(User, user_id) if user_id else None
 

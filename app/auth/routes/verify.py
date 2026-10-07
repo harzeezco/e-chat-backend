@@ -41,7 +41,7 @@ def verify_confirmation_page(token: str):
     )
 
 
-@router.post("/api/v1/verify/resend")
+@router.post("/api/v1/verify/auth/resend")
 def resend_verification_email(
     data: ResendVerificationRequest,
     request: Request,

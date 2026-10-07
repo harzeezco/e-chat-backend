@@ -5,7 +5,7 @@ from app.auth.models.user import User
 
 router = APIRouter()
 
-@router.get("/api/v1/session")
+@router.get("/api/v1/auth/session")
 def get_session(current_user: User = Depends(get_current_user)):
     return {
         "success": True,

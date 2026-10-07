@@ -37,7 +37,8 @@ def processing_pending_email() -> bool:
                 else:
                     delay_seconds = min(300, 2 ** email.attempts)
                     email.status = "pending"
-                    email.next_attempt_at = datetime.now(timezone.utc) + timedelta(seconds=delay_seconds)
+                    email.next_attempt_at = datetime.now(
+                        timezone.utc) + timedelta(seconds=delay_seconds)
                 logger.warning(
                     "Email delivery failed id=%s attempt=%s status=%s error=%s",
                     email.id, email.attempts, email.status, exc,
@@ -55,6 +56,7 @@ def processing_pending_email() -> bool:
             session.rollback()
             raise
 
+
 def run_worker() -> None:
     """Drain available work, pausing only when idle or after an error."""
     global _last_stats_log
@@ -64,8 +66,10 @@ def run_worker() -> None:
                 with SessionLocal() as session:
                     recovered = recover_stale_emails(session)
                     if recovered:
-                        logger.warning("Recovered %s stale email claims", recovered)
-                    logger.info("Email queue stats: %s", get_email_queue_stats(session))
+                        logger.warning(
+                            "Recovered %s stale email claims", recovered)
+                    logger.info("Email queue stats: %s",
+                                get_email_queue_stats(session))
                 _last_stats_log = time.monotonic()
             processed = processing_pending_email()
         except Exception:

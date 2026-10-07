@@ -10,6 +10,7 @@ from app.auth.routes.verify import router as verify_router
 from app.auth.routes.login import router as login_router
 from app.auth.routes.refresh_token import router as refresh_router
 from app.auth.routes.session import router as session_router
+from app.auth.routes.logout import router as logout_router
 
 app = FastAPI()
 
@@ -67,3 +68,4 @@ app.include_router(login_router)
 app.include_router(verify_router)
 app.include_router(refresh_router)
 app.include_router(session_router)
+app.include_router(logout_router)

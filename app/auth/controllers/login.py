@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import select
 from fastapi import Depends, Request
 from sqlalchemy.exc import IntegrityError
-
+from datetime import datetime, timezone
 
 from app.auth.schemas.login import LoginRequest
 from app.database import get_db
@@ -15,11 +15,14 @@ from app.auth.services.audit_logs import create_audit_log
 from app.auth.utils.rate_limiter import RateLimiter
 from app.auth.utils.generate_id import generate_id
 from app.auth.models.login_attempt import LoginAttempt
+from app.auth.models.refresh_token import RefreshToken
 from app.auth.services.verify import (
     store_verification_token,
     delete_verification_token,
 )
 from app.auth.services.create_email_outbox import create_email_outbox
+from app.auth.services.jwt_access_token import decode_refresh_token
+
 
 login_rate_limit = RateLimiter(
     limit=5,
@@ -162,7 +165,7 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
     session.commit()
     access_jwt = access_token(existing_user.id)
     refresh_jwt = refresh_token(existing_user.id)
-    
+    refresh_claims = decode_refresh_token(refresh_jwt)
 
     create_audit_log(
         session,
@@ -176,6 +179,17 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
             "role": existing_user.role.value,
             "status": existing_user.status.value,
         },
+    )
+
+    session.add(
+        RefreshToken(
+            jti=refresh_claims["jti"],
+            user_id=existing_user.id,
+            expires_at=datetime.fromtimestamp(
+                refresh_claims["exp"],
+                tz=timezone.utc,
+            ),
+        )
     )
 
     session.commit()
@@ -206,7 +220,7 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
         secure=False,
         samesite="lax",
         max_age=int(REFRESH_TOKEN_DAYS * 24 * 60 * 60),
-        path="/api/v1/auth/refresh"
+        path="/api/v1/auth"
     )
 
     return response
