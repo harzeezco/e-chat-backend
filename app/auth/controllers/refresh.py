@@ -1,6 +1,7 @@
 import jwt
 
 from datetime import datetime, timezone
+from uuid import uuid4
 from fastapi import Cookie, Depends, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy import select
@@ -8,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from app.auth.models.user import User, UserStatus
 from app.auth.models.refresh_token import RefreshToken
+from app.auth.cookies import COOKIE_SECURE
 from app.auth.services.jwt_access_token import (
     ACCESS_TOKEN_MINUTES,
     access_token,
@@ -57,8 +59,26 @@ def refresh_session(refresh_cookie: str | None = Cookie(default=None, alias="ref
         raise HTTPException(status_code=401, detail="Authentication required",
                             )
 
-    new_access_token = access_token(user_id=user_id)
-    new_refresh_token = refresh_token(user_id=user_id)
+    if stored_token.login_id is None:
+        # A pre-migration refresh token has no reliable device history.
+        if any(key in payload for key in ("login_id", "device_id", "new_device_at_login")):
+            raise HTTPException(status_code=401, detail="Authentication required")
+        login_context = {
+            "login_id": str(uuid4()),
+            "device_id": None,
+            "new_device_at_login": None,
+        }
+    else:
+        login_context = {
+            "login_id": stored_token.login_id,
+            "device_id": stored_token.device_id,
+            "new_device_at_login": stored_token.new_device_at_login,
+        }
+        if any(payload.get(key) != value for key, value in login_context.items()):
+            raise HTTPException(status_code=401, detail="Authentication required")
+
+    new_access_token = access_token(user_id=user_id, **login_context)
+    new_refresh_token = refresh_token(user_id=user_id, **login_context)
     new_refresh_claims = decode_refresh_token(token=new_refresh_token)
 
     stored_token.revoked_at = now
@@ -68,6 +88,7 @@ def refresh_session(refresh_cookie: str | None = Cookie(default=None, alias="ref
         RefreshToken(
             jti=new_refresh_claims["jti"],
             user_id=user_id,
+            **login_context,
             expires_at=datetime.fromtimestamp(
                 new_refresh_claims["exp"],
                 tz=timezone.utc,
@@ -85,7 +106,7 @@ def refresh_session(refresh_cookie: str | None = Cookie(default=None, alias="ref
         key="access_token",
         value=new_access_token,
         httponly=True,
-        secure=False,  # Local HTTP only; use True with HTTPS.
+        secure=COOKIE_SECURE,
         samesite="lax",
         max_age=ACCESS_TOKEN_MINUTES * 60,
         path="/",
@@ -95,7 +116,7 @@ def refresh_session(refresh_cookie: str | None = Cookie(default=None, alias="ref
         key="refresh_token",
         value=new_refresh_token,
         httponly=True,
-        secure=False,  # Local HTTP only; use True with HTTPS.
+        secure=COOKIE_SECURE,
         samesite="lax",
         max_age=REFRESH_TOKEN_DAYS * 24 * 60 * 60,
         path="/api/v1/auth",

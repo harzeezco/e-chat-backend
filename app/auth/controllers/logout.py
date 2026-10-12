@@ -11,6 +11,7 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.auth.models.refresh_token import RefreshToken
 from app.auth.models.revoked_access_token import RevokedAccessToken
+from app.auth.cookies import COOKIE_SECURE
 from app.auth.services.jwt_access_token import (
     decode_access_token,
     decode_refresh_token,
@@ -105,6 +106,12 @@ def logout(
         event_data={
             "access_token_valid": access_payload is not None,
             "refresh_token_valid": refresh_payload is not None,
+            "login_id": (
+                access_payload or refresh_payload or {}
+            ).get("login_id"),
+            "device_id": (
+                access_payload or refresh_payload or {}
+            ).get("device_id"),
         },
     )
     
@@ -121,14 +128,14 @@ def logout(
     response.delete_cookie(
         key="access_token",
         path="/",
-        secure=False,
+        secure=COOKIE_SECURE,
         httponly=True,
         samesite="lax",
     )
     response.delete_cookie(
         key="refresh_token",
         path="/api/v1/auth",
-        secure=False,
+        secure=COOKIE_SECURE,
         httponly=True,
         samesite="lax",
     )

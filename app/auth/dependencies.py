@@ -1,7 +1,7 @@
 import jwt
+from dataclasses import dataclass
 
 from fastapi import Cookie, Depends, HTTPException
-from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 
 from app.auth.models.user import User, UserStatus
@@ -10,10 +10,18 @@ from app.auth.services.jwt_access_token import decode_access_token
 from app.database import get_db
 
 
-def get_current_user(
+@dataclass(frozen=True)
+class AuthenticatedLogin:
+    user: User
+    login_id: str | None
+    device_id: str | None
+    new_device_at_login: bool | None
+
+
+def get_current_login(
     access_cookie: str | None = Cookie(default=None, alias="access_token"),
     session: Session = Depends(get_db),
-):
+) -> AuthenticatedLogin:
     if access_cookie is None:
         raise HTTPException(status_code=401, detail="Authentication required")
 
@@ -38,4 +46,15 @@ def get_current_user(
     if user is None or user.status != UserStatus.ACTIVE:
         raise HTTPException(status_code=401, detail="Authentication required")
 
-    return user
+    return AuthenticatedLogin(
+        user=user,
+        login_id=payload.get("login_id"),
+        device_id=payload.get("device_id"),
+        new_device_at_login=payload.get("new_device_at_login"),
+    )
+
+
+def get_current_user(
+    current_login: AuthenticatedLogin = Depends(get_current_login),
+) -> User:
+    return current_login.user

@@ -12,6 +12,8 @@ from app.auth.models.audit_log import AuditLog
 from app.auth.models.email_outbox import EmailOutbox
 from app.auth.models.refresh_token import RefreshToken
 from app.auth.models.revoked_access_token import RevokedAccessToken
+# from app.security.models.security_event import SecurityEvent
+from app.security.models.user_device import UserDevice
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

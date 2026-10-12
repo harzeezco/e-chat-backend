@@ -1,14 +1,4 @@
-Yes. The best thing to give Codex is **not the whole raw conversation**. Give it a structured project brief that tells it:
 
-- what already exists
-- what architecture you want
-- what should be built before the agent
-- what not to do
-- how to teach you step by step instead of dumping code
-
-Copy this into a file like `SECURITY_AGENT_IMPLEMENTATION_CONTEXT.md` and give it to Codex.
-
-```md
 # AI Fintech Operations Lab
 # Security Investigation Foundation — Implementation Context
 
@@ -73,8 +63,6 @@ I already have:
 
 # AuditLog
 
-```python
-
 
 class AuditLog(Base):
     __tablename__ = "audit_logs"
@@ -127,8 +115,6 @@ class AuditLog(Base):
 
 # LoginAttempt
 
-```python
-
 
 class LoginAttempt(Base):
     __tablename__ = "login_attempts"
@@ -171,8 +157,6 @@ class LoginAttempt(Base):
 
 # RegistrationAttempt
 
-```python
-
 
 class RegistrationAttempt(Base):
     __tablename__ = "registration_attempts"
@@ -211,8 +195,6 @@ class RegistrationAttempt(Base):
     )
 
 
-```
-
 I also have:
 
 - user registration
@@ -231,7 +213,7 @@ Authorization and session management are still being built.
 
 I want to reach this architecture before building the security agent:
 
-```text
+
 User
  │
  ├── Sessions

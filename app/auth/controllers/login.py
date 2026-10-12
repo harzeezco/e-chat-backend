@@ -1,42 +1,66 @@
-
-from fastapi.responses import JSONResponse
-from sqlalchemy.orm import Session
-from sqlalchemy import select
-from fastapi import Depends, Request
-from sqlalchemy.exc import IntegrityError
+import hashlib
+import secrets
 from datetime import datetime, timezone
+from uuid import uuid4
 
-from app.auth.schemas.login import LoginRequest
-from app.database import get_db
-from app.auth.models.user import User, UserStatus
-from app.auth.utils.password import verify_password_hash
-from app.auth.services.jwt_access_token import access_token, ACCESS_TOKEN_MINUTES, refresh_token, REFRESH_TOKEN_DAYS
-from app.auth.services.audit_logs import create_audit_log
-from app.auth.utils.rate_limiter import RateLimiter
-from app.auth.utils.generate_id import generate_id
+from fastapi import Depends, Request
+from fastapi.responses import JSONResponse
+from sqlalchemy import select
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.orm import Session
+
 from app.auth.models.login_attempt import LoginAttempt
 from app.auth.models.refresh_token import RefreshToken
-from app.auth.services.verify import (
-    store_verification_token,
-    delete_verification_token,
-)
+from app.auth.models.user import User, UserStatus
+from app.auth.cookies import COOKIE_SECURE
+from app.auth.schemas.login import LoginRequest
+from app.auth.services.audit_logs import create_audit_log
 from app.auth.services.create_email_outbox import create_email_outbox
-from app.auth.services.jwt_access_token import decode_refresh_token
-
-
-login_rate_limit = RateLimiter(
-    limit=5,
-    window_seconds=60
+from app.auth.services.jwt_access_token import (
+    ACCESS_TOKEN_MINUTES,
+    REFRESH_TOKEN_DAYS,
+    access_token,
+    decode_refresh_token,
+    refresh_token,
 )
+from app.auth.services.verify import (
+    delete_verification_token,
+    store_verification_token,
+)
+from app.auth.utils.generate_id import generate_id
+from app.auth.utils.password import verify_password_hash
+from app.auth.utils.rate_limiter import RateLimiter
+from app.database import get_db
+from app.security.models.user_device import UserDevice
 
 
-def login(request: Request, data: LoginRequest, session: Session = Depends(get_db)):
+login_rate_limit = RateLimiter(limit=5, window_seconds=60)
+
+DEVICE_COOKIE_MAX_AGE = 180 * 24 * 60 * 60
+
+
+def _error(status_code: int, message: str) -> JSONResponse:
+    return JSONResponse(
+        status_code=status_code,
+        content={
+            "success": False,
+            "message": message,
+            "data": None,
+        },
+    )
+
+
+def login(
+    request: Request,
+    data: LoginRequest,
+    session: Session = Depends(get_db),
+):
     client_ip = request.client.host if request.client else None
     user_agent = request.headers.get("user-agent")
 
-    rate_limiter_key = f"rate_limit:login:{client_ip}"
-
-    allowed, count = login_rate_limit.check(rate_limiter_key)
+    allowed, _count = login_rate_limit.check(
+        f"rate_limit:login:{client_ip}"
+    )
 
     attempt = LoginAttempt(
         id=f"log_{generate_id(8)}",
@@ -51,78 +75,53 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
         attempt.failure_reason = "Too many login attempts"
         session.add(attempt)
         session.commit()
-
-        return JSONResponse(
-            status_code=429,
-            content={
-                "success": False,
-                "message": "Too many login attempts. Please try again later.",
-                "data": None,
-            },
+        return _error(
+            429,
+            "Too many login attempts. Please try again later.",
         )
 
     if len(data.password) < 6:
         attempt.failure_reason = "Password is less than 6"
         session.add(attempt)
         session.commit()
-        return JSONResponse(
-            status_code=400,
-            content={
-                "success": False,
-                "message": "Password must be greater than 6",
-                "data": None
-            }
-        )
+        return _error(400, "Password must be greater than 6")
 
     existing_user = session.scalar(
-        select(User).where(User.email == data.email))
+        select(User).where(User.email == data.email)
+    )
 
-    if not existing_user:
-
-        attempt.failure_reason = "User already exist"
+    if existing_user is None:
+        attempt.failure_reason = "User not found"
         session.add(attempt)
-
         session.commit()
-        return JSONResponse(
-            status_code=401,
-            content={
-                "success": False,
-                "message": "Email or password not available",
-                "data": None
-            }
-        )
+        return _error(401, "Email or password not available")
 
-    is_valid_password = verify_password_hash(
-        data.password, existing_user.password_hash)
-
-    if not is_valid_password:
+    if not verify_password_hash(
+        data.password,
+        existing_user.password_hash,
+    ):
         attempt.failure_reason = "Password is not valid"
         session.add(attempt)
         session.commit()
-        return JSONResponse(
-            status_code=401,
-            content={
-                "success": False,
-                "message": "Email or password not available",
-                "data": None
-            }
-        )
+        return _error(401, "Email or password not available")
 
-    if existing_user.status.value == UserStatus.PENDING.value:
+    if existing_user.status == UserStatus.PENDING:
         attempt.failure_reason = "User is pending"
         session.add(attempt)
         session.commit()
+
         verification_token = generate_id(16)
+        store_verification_token(
+            token=verification_token,
+            user_id=existing_user.id,
+        )
+
+        verification_url = (
+            "http://localhost:8000/api/v1/verify"
+            f"?token={verification_token}"
+        )
 
         try:
-
-            store_verification_token(
-                token=verification_token,
-                user_id=existing_user.id,
-            )
-
-            verification_url = f"http://localhost:8000/api/v1/verify?token={verification_token}"
-
             create_email_outbox(
                 session=session,
                 to_email=existing_user.email,
@@ -132,39 +131,68 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
                     "Please verify your account by clicking the link below:\n\n"
                     f"{verification_url}\n\n"
                     "This link will expire in 10 minutes."
-                )
+                ),
             )
             session.commit()
-        except IntegrityError:
+        except SQLAlchemyError:
+            session.rollback()
             delete_verification_token(token=verification_token)
+            raise
 
-        return JSONResponse(
-            status_code=403,
-            content={
-                "success": False,
-                "message": f"Check your mail to verify your account",
-                "data": None
-            }
-        )
-    elif existing_user.status.value != UserStatus.ACTIVE.value:
+        return _error(403, "Check your mail to verify your account")
+
+    if existing_user.status != UserStatus.ACTIVE:
         attempt.failure_reason = "User is not active"
         session.add(attempt)
         session.commit()
+        return _error(403, "Email or password not available")
 
-        return JSONResponse(
-            status_code=403,
-            content={
-                "success": False,
-                "message": "Email or password not available",
-                "data": None
-            }
+    # Authentication has succeeded. Device recognition starts here.
+    device_cookie = request.cookies.get("device_key")
+    device = None
+
+    if device_cookie and len(device_cookie) <= 128:
+        identifier_hash = hashlib.sha256(
+            device_cookie.encode("utf-8")
+        ).hexdigest()
+
+        device = session.scalar(
+            select(UserDevice).where(
+                UserDevice.user_id == existing_user.id,
+                UserDevice.identifier_hash == identifier_hash,
+            )
         )
+
+    new_device = device is None
+    new_device_cookie = None
+
+    if new_device:
+        # Replace missing or unknown values with one generated by the server.
+        new_device_cookie = secrets.token_urlsafe(32)
+
+        device = UserDevice(
+            id=f"dev_{generate_id(16)}",
+            user_id=existing_user.id,
+            identifier_hash=hashlib.sha256(
+                new_device_cookie.encode("utf-8")
+            ).hexdigest(),
+        )
+        session.add(device)
+    else:
+        device.last_seen_at = datetime.now(timezone.utc)
 
     attempt.success = True
     session.add(attempt)
-    session.commit()
-    access_jwt = access_token(existing_user.id)
-    refresh_jwt = refresh_token(existing_user.id)
+
+    # One ID follows this login through every refresh-token rotation.
+    login_id = str(uuid4())
+    login_context = {
+        "login_id": login_id,
+        "device_id": device.id,
+        "new_device_at_login": new_device,
+    }
+    access_jwt = access_token(existing_user.id, **login_context)
+    refresh_jwt = refresh_token(existing_user.id, **login_context)
     refresh_claims = decode_refresh_token(refresh_jwt)
 
     create_audit_log(
@@ -178,6 +206,9 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
         event_data={
             "role": existing_user.role.value,
             "status": existing_user.status.value,
+            "device_id": device.id,
+            "new_device": new_device,
+            "login_id": login_id,
         },
     )
 
@@ -185,6 +216,7 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
         RefreshToken(
             jti=refresh_claims["jti"],
             user_id=existing_user.id,
+            **login_context,
             expires_at=datetime.fromtimestamp(
                 refresh_claims["exp"],
                 tz=timezone.utc,
@@ -192,35 +224,52 @@ def login(request: Request, data: LoginRequest, session: Session = Depends(get_d
         )
     )
 
-    session.commit()
+    # Save the successful attempt, device, audit log, and refresh token
+    # together. No cookies are returned if this commit fails.
+    try:
+        session.commit()
+    except SQLAlchemyError:
+        session.rollback()
+        raise
 
     response = JSONResponse(
         status_code=200,
         content={
             "success": True,
             "message": "Login successful, welcome back",
-            "data": None
-        }
+            "data": None,
+        },
     )
 
     response.set_cookie(
         key="access_token",
         value=access_jwt,
         httponly=True,
-        secure=False,
+        secure=COOKIE_SECURE,
         samesite="lax",
-        max_age=int(ACCESS_TOKEN_MINUTES) * 60,
-        path="/"
+        max_age=ACCESS_TOKEN_MINUTES * 60,
+        path="/",
     )
+
+    if new_device_cookie is not None:
+        response.set_cookie(
+            key="device_key",
+            value=new_device_cookie,
+            httponly=True,
+            secure=COOKIE_SECURE,
+            samesite="lax",
+            max_age=DEVICE_COOKIE_MAX_AGE,
+            path="/",
+        )
 
     response.set_cookie(
         key="refresh_token",
         value=refresh_jwt,
         httponly=True,
-        secure=False,
+        secure=COOKIE_SECURE,
         samesite="lax",
-        max_age=int(REFRESH_TOKEN_DAYS * 24 * 60 * 60),
-        path="/api/v1/auth"
+        max_age=REFRESH_TOKEN_DAYS * 24 * 60 * 60,
+        path="/api/v1/auth",
     )
 
     return response
