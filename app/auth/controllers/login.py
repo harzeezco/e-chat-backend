@@ -178,6 +178,9 @@ def login(
             ).hexdigest(),
         )
         session.add(device)
+        # Insert the device before its ID is referenced by the refresh token.
+        # Flush keeps both rows in the same transaction.
+        session.flush()
     else:
         device.last_seen_at = datetime.now(timezone.utc)
 
