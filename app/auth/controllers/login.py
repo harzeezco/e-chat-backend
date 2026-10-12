@@ -32,6 +32,7 @@ from app.auth.utils.password import verify_password_hash
 from app.auth.utils.rate_limiter import RateLimiter
 from app.database import get_db
 from app.security.models.user_device import UserDevice
+from app.security.events import SecurityEventType, create_security_event
 
 
 login_rate_limit = RateLimiter(limit=5, window_seconds=60)
@@ -48,6 +49,19 @@ def _error(status_code: int, message: str) -> JSONResponse:
             "data": None,
         },
     )
+
+
+def _record_failed_login(session: Session, attempt: LoginAttempt, user_id: str | None = None) -> None:
+    session.add(attempt)
+    create_security_event(
+        session,
+        event_type=SecurityEventType.LOGIN_FAILED,
+        user_id=user_id,
+        ip_address=attempt.ip_address,
+        user_agent=attempt.user_agent,
+        event_data={"login_attempt_id": attempt.id, "reason": attempt.failure_reason},
+    )
+    session.commit()
 
 
 def login(
@@ -73,8 +87,7 @@ def login(
 
     if not allowed:
         attempt.failure_reason = "Too many login attempts"
-        session.add(attempt)
-        session.commit()
+        _record_failed_login(session, attempt)
         return _error(
             429,
             "Too many login attempts. Please try again later.",
@@ -82,8 +95,7 @@ def login(
 
     if len(data.password) < 6:
         attempt.failure_reason = "Password is less than 6"
-        session.add(attempt)
-        session.commit()
+        _record_failed_login(session, attempt)
         return _error(400, "Password must be greater than 6")
 
     existing_user = session.scalar(
@@ -92,8 +104,7 @@ def login(
 
     if existing_user is None:
         attempt.failure_reason = "User not found"
-        session.add(attempt)
-        session.commit()
+        _record_failed_login(session, attempt)
         return _error(401, "Email or password not available")
 
     if not verify_password_hash(
@@ -101,14 +112,12 @@ def login(
         existing_user.password_hash,
     ):
         attempt.failure_reason = "Password is not valid"
-        session.add(attempt)
-        session.commit()
+        _record_failed_login(session, attempt, existing_user.id)
         return _error(401, "Email or password not available")
 
     if existing_user.status == UserStatus.PENDING:
         attempt.failure_reason = "User is pending"
-        session.add(attempt)
-        session.commit()
+        _record_failed_login(session, attempt, existing_user.id)
 
         verification_token = generate_id(16)
         store_verification_token(
@@ -143,8 +152,7 @@ def login(
 
     if existing_user.status != UserStatus.ACTIVE:
         attempt.failure_reason = "User is not active"
-        session.add(attempt)
-        session.commit()
+        _record_failed_login(session, attempt, existing_user.id)
         return _error(403, "Email or password not available")
 
     # Authentication has succeeded. Device recognition starts here.
@@ -213,6 +221,27 @@ def login(
             "new_device": new_device,
             "login_id": login_id,
         },
+    )
+
+    create_security_event(
+        session,
+        event_type=SecurityEventType.LOGIN_SUCCESS,
+        user_id=existing_user.id,
+        login_id=login_id,
+        device_id=device.id,
+        ip_address=client_ip,
+        user_agent=user_agent,
+        event_data={"login_attempt_id": attempt.id, "new_device": new_device},
+    )
+    create_security_event(
+        session,
+        event_type=SecurityEventType.SESSION_CREATED,
+        user_id=existing_user.id,
+        login_id=login_id,
+        device_id=device.id,
+        ip_address=client_ip,
+        user_agent=user_agent,
+        event_data={"new_device": new_device},
     )
 
     session.add(

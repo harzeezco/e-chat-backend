@@ -17,6 +17,7 @@ from app.auth.services.jwt_access_token import (
     decode_refresh_token,
 )
 from app.auth.services.audit_logs import create_audit_log
+from app.security.events import SecurityEventType, create_security_event
 
 
 def logout(
@@ -49,9 +50,10 @@ def logout(
             pass
 
     now = datetime.now(timezone.utc)
+    context_payload = refresh_payload or access_payload or {}
+    user_id = context_payload.get("sub")
 
     try:
-
         if refresh_payload is not None:
             stored_refresh_token = session.scalar(
                 select(RefreshToken)
@@ -65,6 +67,16 @@ def logout(
 
             if stored_refresh_token is not None:
                 stored_refresh_token.revoked_at = now
+                create_security_event(
+                    session,
+                    event_type=SecurityEventType.SESSION_REVOKED,
+                    user_id=stored_refresh_token.user_id,
+                    login_id=stored_refresh_token.login_id,
+                    device_id=stored_refresh_token.device_id,
+                    ip_address=client_ip,
+                    user_agent=user_agent,
+                    event_data={"reason": "logout", "token_jti": stored_refresh_token.jti},
+                )
 
         if access_payload is not None:
             session.execute(
@@ -81,41 +93,38 @@ def logout(
                 )
             )
 
+        create_audit_log(
+            session,
+            action="USER_LOGOUT",
+            user_id=user_id,
+            resource_type="USER" if user_id else None,
+            resource_id=user_id,
+            ip_address=client_ip,
+            user_agent=user_agent,
+            event_data={
+                "access_token_valid": access_payload is not None,
+                "refresh_token_valid": refresh_payload is not None,
+                "login_id": context_payload.get("login_id"),
+                "device_id": context_payload.get("device_id"),
+            },
+        )
+        create_security_event(
+            session,
+            event_type=SecurityEventType.LOGOUT,
+            user_id=user_id,
+            login_id=context_payload.get("login_id"),
+            device_id=context_payload.get("device_id"),
+            ip_address=client_ip,
+            user_agent=user_agent,
+            event_data={
+                "access_token_valid": access_payload is not None,
+                "refresh_token_valid": refresh_payload is not None,
+            },
+        )
         session.commit()
-
     except SQLAlchemyError:
         session.rollback()
         raise
-
-    user_id = (
-        access_payload["sub"]
-        if access_payload is not None
-        else refresh_payload["sub"]
-        if refresh_payload is not None
-        else None
-    )
-
-    create_audit_log(
-        session,
-        action="USER_LOGOUT",
-        user_id=user_id,
-        resource_type="USER" if user_id else None,
-        resource_id=user_id,
-        ip_address=client_ip,
-        user_agent=user_agent,
-        event_data={
-            "access_token_valid": access_payload is not None,
-            "refresh_token_valid": refresh_payload is not None,
-            "login_id": (
-                access_payload or refresh_payload or {}
-            ).get("login_id"),
-            "device_id": (
-                access_payload or refresh_payload or {}
-            ).get("device_id"),
-        },
-    )
-    
-    session.commit()
 
     response = JSONResponse(
         content={

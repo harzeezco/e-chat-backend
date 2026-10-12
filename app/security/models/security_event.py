@@ -22,10 +22,9 @@ class SecurityEvent(Base):
         index=True,
     )
 
-    # Which authenticated login/session produced the event
-    session_id: Mapped[str | None] = mapped_column(
-        String,
-        ForeignKey("sessions.id"),
+    # Stable ID shared by token rotations from one successful login
+    login_id: Mapped[str | None] = mapped_column(
+        String(36),
         nullable=True,
         index=True,
     )

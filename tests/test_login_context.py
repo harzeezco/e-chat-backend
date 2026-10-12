@@ -11,7 +11,7 @@ os.environ.setdefault("JWT_SECRET_KEY", "test-only-login-context-secret")
 os.environ.setdefault("JWT_ALGORITHM", "HS256")
 
 import jwt
-from fastapi import HTTPException
+from fastapi import HTTPException, Request
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
@@ -32,6 +32,7 @@ from app.auth.services.jwt_access_token import (
     refresh_token,
 )
 from app.security.models.user_device import UserDevice
+from app.security.models.security_event import SecurityEvent
 
 
 class LoginContextTests(unittest.TestCase):
@@ -45,6 +46,7 @@ class LoginContextTests(unittest.TestCase):
             User.__table__,
             UserDevice.__table__,
             RefreshToken.__table__,
+            SecurityEvent.__table__,
             RevokedAccessToken.__table__,
         ):
             table.create(self.engine)
@@ -101,7 +103,7 @@ class LoginContextTests(unittest.TestCase):
         )
         self.session.commit()
 
-        response = refresh_session(refresh_cookie=old_refresh, session=self.session)
+        response = refresh_session(request=Request({"type": "http", "headers": [], "client": ("127.0.0.1", 1234)}), refresh_cookie=old_refresh, session=self.session)
         access_claims = decode_access_token(self.cookie(response, "access_token"))
         refresh_claims = decode_refresh_token(self.cookie(response, "refresh_token"))
         for claims in (access_claims, refresh_claims):
@@ -137,7 +139,7 @@ class LoginContextTests(unittest.TestCase):
         self.session.commit()
 
         with self.assertRaises(HTTPException) as error:
-            refresh_session(refresh_cookie=token, session=self.session)
+            refresh_session(request=Request({"type": "http", "headers": [], "client": ("127.0.0.1", 1234)}), refresh_cookie=token, session=self.session)
         self.assertEqual(error.exception.status_code, 401)
         self.assertIsNone(self.session.get(RefreshToken, claims["jti"]).revoked_at)
 
@@ -166,7 +168,7 @@ class LoginContextTests(unittest.TestCase):
         )
         self.session.commit()
 
-        response = refresh_session(refresh_cookie=old_token, session=self.session)
+        response = refresh_session(request=Request({"type": "http", "headers": [], "client": ("127.0.0.1", 1234)}), refresh_cookie=old_token, session=self.session)
         new_claims = decode_refresh_token(self.cookie(response, "refresh_token"))
         self.assertTrue(new_claims["login_id"])
         self.assertIsNone(new_claims["device_id"])

@@ -2,7 +2,7 @@ import jwt
 
 from datetime import datetime, timezone
 from uuid import uuid4
-from fastapi import Cookie, Depends, HTTPException
+from fastapi import Cookie, Depends, HTTPException, Request
 from fastapi.responses import JSONResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -18,8 +18,9 @@ from app.auth.services.jwt_access_token import (
     REFRESH_TOKEN_DAYS
 )
 from app.database import get_db
+from app.security.events import SecurityEventType, create_security_event
 
-def refresh_session(refresh_cookie: str | None = Cookie(default=None, alias="refresh_token"), session: Session = Depends(get_db)):
+def refresh_session(request: Request, refresh_cookie: str | None = Cookie(default=None, alias="refresh_token"), session: Session = Depends(get_db)):
     if refresh_cookie is None:
         raise HTTPException(
             status_code=401,
@@ -96,6 +97,19 @@ def refresh_session(refresh_cookie: str | None = Cookie(default=None, alias="ref
         )
     )
 
+    create_security_event(
+        session,
+        event_type=SecurityEventType.SESSION_REFRESHED,
+        user_id=user_id,
+        login_id=login_context["login_id"],
+        device_id=login_context["device_id"],
+        ip_address=request.client.host if request.client else None,
+        user_agent=request.headers.get("user-agent"),
+        event_data={
+            "previous_token_jti": stored_token.jti,
+            "new_token_jti": new_refresh_claims["jti"],
+        },
+    )
     session.commit()
 
     response = JSONResponse(
